@@ -1,0 +1,2764 @@
+{
+  "schema_version": "3.0.0",
+  "environment": "demo",
+  "generated_at": "2026-10-02T22:00:00Z",
+  "authorization": {
+    "status": "synthetic-demo",
+    "reference": null
+  },
+  "source": {
+    "id": "plan-assiste-direto-demo",
+    "name": "Plan-Assiste — credenciamento direto demonstrativo",
+    "kind": "direct-network",
+    "relationship_label": "Credenciamento direto",
+    "coverage_scope": "national",
+    "states": [
+      "AC",
+      "AM",
+      "PA",
+      "RO",
+      "TO",
+      "MA",
+      "CE",
+      "RN",
+      "PE",
+      "BA",
+      "DF",
+      "GO",
+      "MT",
+      "MS",
+      "MG",
+      "ES",
+      "RJ",
+      "SP",
+      "PR",
+      "RS"
+    ],
+    "record_count": 60,
+    "status": "synthetic-demo",
+    "verification_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+  },
+  "record_count": 60,
+  "records": [
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-001",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 001",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "AC",
+        "number": "DEMO-00001"
+      },
+      "specialties": [
+        {
+          "name": "Cirurgia geral",
+          "rqe": "DEMO-RQE-0001"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ac-0001",
+          "facility_name": "Unidade Assistencial Demonstrativa Rio Branco",
+          "phones": [
+            "(68) 0000-0101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0001",
+            "district": "Centro",
+            "city": "Rio Branco",
+            "state": "AC"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-002",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 002",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "AM",
+        "number": "DEMO-00002"
+      },
+      "specialties": [
+        {
+          "name": "Cirurgia pediátrica",
+          "rqe": "DEMO-RQE-0002"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-am-0002",
+          "facility_name": "Unidade Assistencial Demonstrativa Manaus",
+          "phones": [
+            "(92) 0000-0201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0002",
+            "district": "Adrianópolis",
+            "city": "Manaus",
+            "state": "AM"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-003",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 003",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "PA",
+        "number": "DEMO-00003"
+      },
+      "specialties": [
+        {
+          "name": "Clínica médica",
+          "rqe": "DEMO-RQE-0003"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-pa-0003",
+          "facility_name": "Unidade Assistencial Demonstrativa Belém",
+          "phones": [
+            "(91) 0000-0301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0003",
+            "district": "Umarizal",
+            "city": "Belém",
+            "state": "PA"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-004",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 004",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "RO",
+        "number": "DEMO-00004"
+      },
+      "specialties": [
+        {
+          "name": "Coloproctologia",
+          "rqe": "DEMO-RQE-0004"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ro-0004",
+          "facility_name": "Unidade Assistencial Demonstrativa Porto Velho",
+          "phones": [
+            "(69) 0000-0401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0004",
+            "district": "Olaria",
+            "city": "Porto Velho",
+            "state": "RO"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-005",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 005",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "TO",
+        "number": "DEMO-00005"
+      },
+      "specialties": [
+        {
+          "name": "Dermatologia",
+          "rqe": "DEMO-RQE-0005"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-to-0005",
+          "facility_name": "Unidade Assistencial Demonstrativa Palmas",
+          "phones": [
+            "(63) 0000-0501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0005",
+            "district": "Plano Diretor Sul",
+            "city": "Palmas",
+            "state": "TO"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-006",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 006",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "MA",
+        "number": "DEMO-00006"
+      },
+      "specialties": [
+        {
+          "name": "Endocrinologia",
+          "rqe": "DEMO-RQE-0006"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ma-0006",
+          "facility_name": "Unidade Assistencial Demonstrativa São Luís",
+          "phones": [
+            "(98) 0000-0601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0006",
+            "district": "Renascença",
+            "city": "São Luís",
+            "state": "MA"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-007",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 007",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "CE",
+        "number": "DEMO-00007"
+      },
+      "specialties": [
+        {
+          "name": "Endoscopia",
+          "rqe": "DEMO-RQE-0007"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ce-0007",
+          "facility_name": "Unidade Assistencial Demonstrativa Fortaleza",
+          "phones": [
+            "(85) 0000-0701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0007",
+            "district": "Aldeota",
+            "city": "Fortaleza",
+            "state": "CE"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-008",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 008",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "RN",
+        "number": "DEMO-00008"
+      },
+      "specialties": [
+        {
+          "name": "Gastroenterologia",
+          "rqe": "DEMO-RQE-0008"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-rn-0008",
+          "facility_name": "Unidade Assistencial Demonstrativa Natal",
+          "phones": [
+            "(84) 0000-0801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0008",
+            "district": "Tirol",
+            "city": "Natal",
+            "state": "RN"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-009",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 009",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "PE",
+        "number": "DEMO-00009"
+      },
+      "specialties": [
+        {
+          "name": "Genética médica",
+          "rqe": "DEMO-RQE-0009"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-pe-0009",
+          "facility_name": "Unidade Assistencial Demonstrativa Recife",
+          "phones": [
+            "(81) 0000-0901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0009",
+            "district": "Boa Viagem",
+            "city": "Recife",
+            "state": "PE"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-010",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 010",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "BA",
+        "number": "DEMO-00010"
+      },
+      "specialties": [
+        {
+          "name": "Geriatria",
+          "rqe": "DEMO-RQE-0010"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ba-0010",
+          "facility_name": "Unidade Assistencial Demonstrativa Salvador",
+          "phones": [
+            "(71) 0000-1001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0010",
+            "district": "Pituba",
+            "city": "Salvador",
+            "state": "BA"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-011",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 011",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "DF",
+        "number": "DEMO-00011"
+      },
+      "specialties": [
+        {
+          "name": "Ginecologia",
+          "rqe": "DEMO-RQE-0011"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-df-0011",
+          "facility_name": "Unidade Assistencial Demonstrativa Brasília",
+          "phones": [
+            "(61) 0000-1101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0011",
+            "district": "Asa Norte",
+            "city": "Brasília",
+            "state": "DF"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-012",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 012",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "GO",
+        "number": "DEMO-00012"
+      },
+      "specialties": [
+        {
+          "name": "Hematologia",
+          "rqe": "DEMO-RQE-0012"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-go-0012",
+          "facility_name": "Unidade Assistencial Demonstrativa Goiânia",
+          "phones": [
+            "(62) 0000-1201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0012",
+            "district": "Setor Bueno",
+            "city": "Goiânia",
+            "state": "GO"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-013",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 013",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "MT",
+        "number": "DEMO-00013"
+      },
+      "specialties": [
+        {
+          "name": "Infectologia",
+          "rqe": "DEMO-RQE-0013"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-mt-0013",
+          "facility_name": "Unidade Assistencial Demonstrativa Cuiabá",
+          "phones": [
+            "(65) 0000-1301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0013",
+            "district": "Centro Sul",
+            "city": "Cuiabá",
+            "state": "MT"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-014",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 014",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "MS",
+        "number": "DEMO-00014"
+      },
+      "specialties": [
+        {
+          "name": "Mastologia",
+          "rqe": "DEMO-RQE-0014"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ms-0014",
+          "facility_name": "Unidade Assistencial Demonstrativa Campo Grande",
+          "phones": [
+            "(67) 0000-1401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0014",
+            "district": "Jardim dos Estados",
+            "city": "Campo Grande",
+            "state": "MS"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-015",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 015",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "MG",
+        "number": "DEMO-00015"
+      },
+      "specialties": [
+        {
+          "name": "Medicina de família",
+          "rqe": "DEMO-RQE-0015"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-mg-0015",
+          "facility_name": "Unidade Assistencial Demonstrativa Belo Horizonte",
+          "phones": [
+            "(31) 0000-1501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0015",
+            "district": "Funcionários",
+            "city": "Belo Horizonte",
+            "state": "MG"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-016",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 016",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "ES",
+        "number": "DEMO-00016"
+      },
+      "specialties": [
+        {
+          "name": "Medicina do trabalho",
+          "rqe": "DEMO-RQE-0016"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-es-0016",
+          "facility_name": "Unidade Assistencial Demonstrativa Vitória",
+          "phones": [
+            "(27) 0000-1601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0016",
+            "district": "Praia do Canto",
+            "city": "Vitória",
+            "state": "ES"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-017",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 017",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "RJ",
+        "number": "DEMO-00017"
+      },
+      "specialties": [
+        {
+          "name": "Medicina esportiva",
+          "rqe": "DEMO-RQE-0017"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-rj-0017",
+          "facility_name": "Unidade Assistencial Demonstrativa Rio de Janeiro",
+          "phones": [
+            "(21) 0000-1701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0017",
+            "district": "Botafogo",
+            "city": "Rio de Janeiro",
+            "state": "RJ"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-018",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 018",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00018"
+      },
+      "specialties": [
+        {
+          "name": "Nefrologia",
+          "rqe": "DEMO-RQE-0018"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0018",
+          "facility_name": "Unidade Assistencial Demonstrativa São Paulo",
+          "phones": [
+            "(11) 0000-1801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0018",
+            "district": "Bela Vista",
+            "city": "São Paulo",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-019",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 019",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "PR",
+        "number": "DEMO-00019"
+      },
+      "specialties": [
+        {
+          "name": "Neurocirurgia",
+          "rqe": "DEMO-RQE-0019"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-pr-0019",
+          "facility_name": "Unidade Assistencial Demonstrativa Curitiba",
+          "phones": [
+            "(41) 0000-1901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0019",
+            "district": "Batel",
+            "city": "Curitiba",
+            "state": "PR"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-020",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 020",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "RS",
+        "number": "DEMO-00020"
+      },
+      "specialties": [
+        {
+          "name": "Neurologia",
+          "rqe": "DEMO-RQE-0020"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-rs-0020",
+          "facility_name": "Unidade Assistencial Demonstrativa Porto Alegre",
+          "phones": [
+            "(51) 0000-2001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0020",
+            "district": "Moinhos de Vento",
+            "city": "Porto Alegre",
+            "state": "RS"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-021",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 021",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "AC",
+        "number": "DEMO-00021"
+      },
+      "specialties": [
+        {
+          "name": "Nutrologia",
+          "rqe": "DEMO-RQE-0021"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ac-0021",
+          "facility_name": "Unidade Assistencial Demonstrativa Rio Branco",
+          "phones": [
+            "(68) 0000-2101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0021",
+            "district": "Centro",
+            "city": "Rio Branco",
+            "state": "AC"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-022",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 022",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "AM",
+        "number": "DEMO-00022"
+      },
+      "specialties": [
+        {
+          "name": "Obstetrícia",
+          "rqe": "DEMO-RQE-0022"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-am-0022",
+          "facility_name": "Unidade Assistencial Demonstrativa Manaus",
+          "phones": [
+            "(92) 0000-2201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0022",
+            "district": "Adrianópolis",
+            "city": "Manaus",
+            "state": "AM"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-023",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 023",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "PA",
+        "number": "DEMO-00023"
+      },
+      "specialties": [
+        {
+          "name": "Oftalmologia",
+          "rqe": "DEMO-RQE-0023"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-pa-0023",
+          "facility_name": "Unidade Assistencial Demonstrativa Belém",
+          "phones": [
+            "(91) 0000-2301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0023",
+            "district": "Umarizal",
+            "city": "Belém",
+            "state": "PA"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-024",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 024",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "RO",
+        "number": "DEMO-00024"
+      },
+      "specialties": [
+        {
+          "name": "Oncologia clínica",
+          "rqe": "DEMO-RQE-0024"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ro-0024",
+          "facility_name": "Unidade Assistencial Demonstrativa Porto Velho",
+          "phones": [
+            "(69) 0000-2401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0024",
+            "district": "Olaria",
+            "city": "Porto Velho",
+            "state": "RO"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-025",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 025",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "TO",
+        "number": "DEMO-00025"
+      },
+      "specialties": [
+        {
+          "name": "Ortopedia",
+          "rqe": "DEMO-RQE-0025"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-to-0025",
+          "facility_name": "Unidade Assistencial Demonstrativa Palmas",
+          "phones": [
+            "(63) 0000-2501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0025",
+            "district": "Plano Diretor Sul",
+            "city": "Palmas",
+            "state": "TO"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-026",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 026",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "MA",
+        "number": "DEMO-00026"
+      },
+      "specialties": [
+        {
+          "name": "Otorrinolaringologia",
+          "rqe": "DEMO-RQE-0026"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ma-0026",
+          "facility_name": "Unidade Assistencial Demonstrativa São Luís",
+          "phones": [
+            "(98) 0000-2601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0026",
+            "district": "Renascença",
+            "city": "São Luís",
+            "state": "MA"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-027",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 027",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "CE",
+        "number": "DEMO-00027"
+      },
+      "specialties": [
+        {
+          "name": "Patologia",
+          "rqe": "DEMO-RQE-0027"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ce-0027",
+          "facility_name": "Unidade Assistencial Demonstrativa Fortaleza",
+          "phones": [
+            "(85) 0000-2701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0027",
+            "district": "Aldeota",
+            "city": "Fortaleza",
+            "state": "CE"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-028",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 028",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "RN",
+        "number": "DEMO-00028"
+      },
+      "specialties": [
+        {
+          "name": "Pediatria",
+          "rqe": "DEMO-RQE-0028"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-rn-0028",
+          "facility_name": "Unidade Assistencial Demonstrativa Natal",
+          "phones": [
+            "(84) 0000-2801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0028",
+            "district": "Tirol",
+            "city": "Natal",
+            "state": "RN"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-029",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 029",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "PE",
+        "number": "DEMO-00029"
+      },
+      "specialties": [
+        {
+          "name": "Pneumologia",
+          "rqe": "DEMO-RQE-0029"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-pe-0029",
+          "facility_name": "Unidade Assistencial Demonstrativa Recife",
+          "phones": [
+            "(81) 0000-2901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0029",
+            "district": "Boa Viagem",
+            "city": "Recife",
+            "state": "PE"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-030",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 030",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "BA",
+        "number": "DEMO-00030"
+      },
+      "specialties": [
+        {
+          "name": "Psiquiatria",
+          "rqe": "DEMO-RQE-0030"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ba-0030",
+          "facility_name": "Unidade Assistencial Demonstrativa Salvador",
+          "phones": [
+            "(71) 0000-3001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0030",
+            "district": "Pituba",
+            "city": "Salvador",
+            "state": "BA"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-031",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 031",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "DF",
+        "number": "DEMO-00031"
+      },
+      "specialties": [
+        {
+          "name": "Radiologia",
+          "rqe": "DEMO-RQE-0031"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-df-0031",
+          "facility_name": "Unidade Assistencial Demonstrativa Brasília",
+          "phones": [
+            "(61) 0000-3101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0031",
+            "district": "Asa Norte",
+            "city": "Brasília",
+            "state": "DF"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-032",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 032",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "GO",
+        "number": "DEMO-00032"
+      },
+      "specialties": [
+        {
+          "name": "Reumatologia",
+          "rqe": "DEMO-RQE-0032"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-go-0032",
+          "facility_name": "Unidade Assistencial Demonstrativa Goiânia",
+          "phones": [
+            "(62) 0000-3201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0032",
+            "district": "Setor Bueno",
+            "city": "Goiânia",
+            "state": "GO"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-033",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 033",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "MT",
+        "number": "DEMO-00033"
+      },
+      "specialties": [
+        {
+          "name": "Urologia",
+          "rqe": "DEMO-RQE-0033"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-mt-0033",
+          "facility_name": "Unidade Assistencial Demonstrativa Cuiabá",
+          "phones": [
+            "(65) 0000-3301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0033",
+            "district": "Centro Sul",
+            "city": "Cuiabá",
+            "state": "MT"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-034",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 034",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "MS",
+        "number": "DEMO-00034"
+      },
+      "specialties": [
+        {
+          "name": "Medicina intensiva",
+          "rqe": "DEMO-RQE-0034"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ms-0034",
+          "facility_name": "Unidade Assistencial Demonstrativa Campo Grande",
+          "phones": [
+            "(67) 0000-3401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0034",
+            "district": "Jardim dos Estados",
+            "city": "Campo Grande",
+            "state": "MS"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-035",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 035",
+      "professional_registry": {
+        "council": "CRP",
+        "state": "MG",
+        "number": "DEMO-00035"
+      },
+      "specialties": [
+        {
+          "name": "Psicologia",
+          "rqe": "DEMO-RQE-0035"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-mg-0035",
+          "facility_name": "Unidade Assistencial Demonstrativa Belo Horizonte",
+          "phones": [
+            "(31) 0000-3501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0035",
+            "district": "Funcionários",
+            "city": "Belo Horizonte",
+            "state": "MG"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-036",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 036",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "ES",
+        "number": "DEMO-00036"
+      },
+      "specialties": [
+        {
+          "name": "Fisioterapia",
+          "rqe": "DEMO-RQE-0036"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-es-0036",
+          "facility_name": "Unidade Assistencial Demonstrativa Vitória",
+          "phones": [
+            "(27) 0000-3601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0036",
+            "district": "Praia do Canto",
+            "city": "Vitória",
+            "state": "ES"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-037",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 037",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "RJ",
+        "number": "DEMO-00037"
+      },
+      "specialties": [
+        {
+          "name": "Nutrição",
+          "rqe": "DEMO-RQE-0037"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-rj-0037",
+          "facility_name": "Unidade Assistencial Demonstrativa Rio de Janeiro",
+          "phones": [
+            "(21) 0000-3701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0037",
+            "district": "Botafogo",
+            "city": "Rio de Janeiro",
+            "state": "RJ"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-038",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 038",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00038"
+      },
+      "specialties": [
+        {
+          "name": "Odontologia",
+          "rqe": "DEMO-RQE-0038"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0038",
+          "facility_name": "Unidade Assistencial Demonstrativa São Paulo",
+          "phones": [
+            "(11) 0000-3801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0038",
+            "district": "Bela Vista",
+            "city": "São Paulo",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-039",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 039",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "PR",
+        "number": "DEMO-00039"
+      },
+      "specialties": [
+        {
+          "name": "Fonoaudiologia",
+          "rqe": "DEMO-RQE-0039"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-pr-0039",
+          "facility_name": "Unidade Assistencial Demonstrativa Curitiba",
+          "phones": [
+            "(41) 0000-3901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0039",
+            "district": "Batel",
+            "city": "Curitiba",
+            "state": "PR"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-plan-assiste-direto-demo-040",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 040",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "RS",
+        "number": "DEMO-00040"
+      },
+      "specialties": [
+        {
+          "name": "Terapia ocupacional",
+          "rqe": "DEMO-RQE-0040"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-rs-0040",
+          "facility_name": "Unidade Assistencial Demonstrativa Porto Alegre",
+          "phones": [
+            "(51) 0000-4001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0040",
+            "district": "Moinhos de Vento",
+            "city": "Porto Alegre",
+            "state": "RS"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-001",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Rio Branco 001",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Anestesiologia",
+          "rqe": null
+        },
+        {
+          "name": "Coloproctologia",
+          "rqe": null
+        },
+        {
+          "name": "Ortopedia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ac-0001",
+          "facility_name": "Unidade assistencial Demonstrativa Rio Branco",
+          "phones": [
+            "(68) 0000-0101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0001",
+            "district": "Centro",
+            "city": "Rio Branco",
+            "state": "AC"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-002",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Manaus 002",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Angiologia",
+          "rqe": null
+        },
+        {
+          "name": "Dermatologia",
+          "rqe": null
+        },
+        {
+          "name": "Otorrinolaringologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-am-0002",
+          "facility_name": "Unidade assistencial Demonstrativa Manaus",
+          "phones": [
+            "(92) 0000-0201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0002",
+            "district": "Adrianópolis",
+            "city": "Manaus",
+            "state": "AM"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-003",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Belém 003",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Cardiologia",
+          "rqe": null
+        },
+        {
+          "name": "Endocrinologia",
+          "rqe": null
+        },
+        {
+          "name": "Patologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-pa-0003",
+          "facility_name": "Unidade assistencial Demonstrativa Belém",
+          "phones": [
+            "(91) 0000-0301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0003",
+            "district": "Umarizal",
+            "city": "Belém",
+            "state": "PA"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-004",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Porto Velho 004",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Cirurgia cardiovascular",
+          "rqe": null
+        },
+        {
+          "name": "Endoscopia",
+          "rqe": null
+        },
+        {
+          "name": "Pediatria",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ro-0004",
+          "facility_name": "Unidade assistencial Demonstrativa Porto Velho",
+          "phones": [
+            "(69) 0000-0401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0004",
+            "district": "Olaria",
+            "city": "Porto Velho",
+            "state": "RO"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-005",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Palmas 005",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Cirurgia geral",
+          "rqe": null
+        },
+        {
+          "name": "Gastroenterologia",
+          "rqe": null
+        },
+        {
+          "name": "Pneumologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-to-0005",
+          "facility_name": "Unidade assistencial Demonstrativa Palmas",
+          "phones": [
+            "(63) 0000-0501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0005",
+            "district": "Plano Diretor Sul",
+            "city": "Palmas",
+            "state": "TO"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-006",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo São Luís 006",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Cirurgia pediátrica",
+          "rqe": null
+        },
+        {
+          "name": "Genética médica",
+          "rqe": null
+        },
+        {
+          "name": "Psiquiatria",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ma-0006",
+          "facility_name": "Unidade assistencial Demonstrativa São Luís",
+          "phones": [
+            "(98) 0000-0601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0006",
+            "district": "Renascença",
+            "city": "São Luís",
+            "state": "MA"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-007",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Fortaleza 007",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Clínica médica",
+          "rqe": null
+        },
+        {
+          "name": "Geriatria",
+          "rqe": null
+        },
+        {
+          "name": "Radiologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ce-0007",
+          "facility_name": "Unidade assistencial Demonstrativa Fortaleza",
+          "phones": [
+            "(85) 0000-0701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0007",
+            "district": "Aldeota",
+            "city": "Fortaleza",
+            "state": "CE"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-008",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Natal 008",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Coloproctologia",
+          "rqe": null
+        },
+        {
+          "name": "Ginecologia",
+          "rqe": null
+        },
+        {
+          "name": "Reumatologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-rn-0008",
+          "facility_name": "Unidade assistencial Demonstrativa Natal",
+          "phones": [
+            "(84) 0000-0801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0008",
+            "district": "Tirol",
+            "city": "Natal",
+            "state": "RN"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-009",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Recife 009",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Dermatologia",
+          "rqe": null
+        },
+        {
+          "name": "Hematologia",
+          "rqe": null
+        },
+        {
+          "name": "Urologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-pe-0009",
+          "facility_name": "Unidade assistencial Demonstrativa Recife",
+          "phones": [
+            "(81) 0000-0901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0009",
+            "district": "Boa Viagem",
+            "city": "Recife",
+            "state": "PE"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-010",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Salvador 010",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Endocrinologia",
+          "rqe": null
+        },
+        {
+          "name": "Infectologia",
+          "rqe": null
+        },
+        {
+          "name": "Medicina intensiva",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ba-0010",
+          "facility_name": "Unidade assistencial Demonstrativa Salvador",
+          "phones": [
+            "(71) 0000-1001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0010",
+            "district": "Pituba",
+            "city": "Salvador",
+            "state": "BA"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-011",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Brasília 011",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Endoscopia",
+          "rqe": null
+        },
+        {
+          "name": "Mastologia",
+          "rqe": null
+        },
+        {
+          "name": "Psicologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-df-0011",
+          "facility_name": "Unidade assistencial Demonstrativa Brasília",
+          "phones": [
+            "(61) 0000-1101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0011",
+            "district": "Asa Norte",
+            "city": "Brasília",
+            "state": "DF"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-012",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Goiânia 012",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Gastroenterologia",
+          "rqe": null
+        },
+        {
+          "name": "Medicina de família",
+          "rqe": null
+        },
+        {
+          "name": "Fisioterapia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-go-0012",
+          "facility_name": "Unidade assistencial Demonstrativa Goiânia",
+          "phones": [
+            "(62) 0000-1201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0012",
+            "district": "Setor Bueno",
+            "city": "Goiânia",
+            "state": "GO"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-013",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Cuiabá 013",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Genética médica",
+          "rqe": null
+        },
+        {
+          "name": "Medicina do trabalho",
+          "rqe": null
+        },
+        {
+          "name": "Nutrição",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-mt-0013",
+          "facility_name": "Unidade assistencial Demonstrativa Cuiabá",
+          "phones": [
+            "(65) 0000-1301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0013",
+            "district": "Centro Sul",
+            "city": "Cuiabá",
+            "state": "MT"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-014",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Campo Grande 014",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Geriatria",
+          "rqe": null
+        },
+        {
+          "name": "Medicina esportiva",
+          "rqe": null
+        },
+        {
+          "name": "Odontologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-ms-0014",
+          "facility_name": "Unidade assistencial Demonstrativa Campo Grande",
+          "phones": [
+            "(67) 0000-1401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0014",
+            "district": "Jardim dos Estados",
+            "city": "Campo Grande",
+            "state": "MS"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-015",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Belo Horizonte 015",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Ginecologia",
+          "rqe": null
+        },
+        {
+          "name": "Nefrologia",
+          "rqe": null
+        },
+        {
+          "name": "Fonoaudiologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-mg-0015",
+          "facility_name": "Unidade assistencial Demonstrativa Belo Horizonte",
+          "phones": [
+            "(31) 0000-1501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0015",
+            "district": "Funcionários",
+            "city": "Belo Horizonte",
+            "state": "MG"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-016",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Vitória 016",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Hematologia",
+          "rqe": null
+        },
+        {
+          "name": "Neurocirurgia",
+          "rqe": null
+        },
+        {
+          "name": "Terapia ocupacional",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-es-0016",
+          "facility_name": "Unidade assistencial Demonstrativa Vitória",
+          "phones": [
+            "(27) 0000-1601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0016",
+            "district": "Praia do Canto",
+            "city": "Vitória",
+            "state": "ES"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-017",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Rio de Janeiro 017",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Infectologia",
+          "rqe": null
+        },
+        {
+          "name": "Neurologia",
+          "rqe": null
+        },
+        {
+          "name": "Enfermagem",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-rj-0017",
+          "facility_name": "Unidade assistencial Demonstrativa Rio de Janeiro",
+          "phones": [
+            "(21) 0000-1701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0017",
+            "district": "Botafogo",
+            "city": "Rio de Janeiro",
+            "state": "RJ"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-018",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo São Paulo 018",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Mastologia",
+          "rqe": null
+        },
+        {
+          "name": "Nutrologia",
+          "rqe": null
+        },
+        {
+          "name": "Serviço social",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0018",
+          "facility_name": "Unidade assistencial Demonstrativa São Paulo",
+          "phones": [
+            "(11) 0000-1801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0018",
+            "district": "Bela Vista",
+            "city": "São Paulo",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-019",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Curitiba 019",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Medicina de família",
+          "rqe": null
+        },
+        {
+          "name": "Obstetrícia",
+          "rqe": null
+        },
+        {
+          "name": "Alergia e imunologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-pr-0019",
+          "facility_name": "Unidade assistencial Demonstrativa Curitiba",
+          "phones": [
+            "(41) 0000-1901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0019",
+            "district": "Batel",
+            "city": "Curitiba",
+            "state": "PR"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-plan-assiste-direto-demo-020",
+      "source_id": "plan-assiste-direto-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Porto Alegre 020",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Medicina do trabalho",
+          "rqe": null
+        },
+        {
+          "name": "Oftalmologia",
+          "rqe": null
+        },
+        {
+          "name": "Anestesiologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-rs-0020",
+          "facility_name": "Unidade assistencial Demonstrativa Porto Alegre",
+          "phones": [
+            "(51) 0000-2001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0020",
+            "district": "Moinhos de Vento",
+            "city": "Porto Alegre",
+            "state": "RS"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "plan-assiste-direto-demo",
+          "relationship_type": "direct-network",
+          "relationship_label": "Credenciamento direto",
+          "coverage_scope": "national",
+          "access_mode": "Credenciamento direto",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    }
+  ]
+}

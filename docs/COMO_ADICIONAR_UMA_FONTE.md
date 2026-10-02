@@ -30,6 +30,9 @@ O diretório `modelos` contém um CSV de referência. Cada registro deve indicar
 - estabelecimento;
 - telefone profissional;
 - endereço profissional.
+- forma de vínculo e modalidade de acesso;
+- abrangência e UFs atendidas;
+- data de atualização e regra de confirmação.
 
 ## Regras para uma fonte real
 
@@ -43,6 +46,7 @@ Antes de aceitar uma base real, deverão existir:
 6. regras de retenção e revogação;
 7. testes contra publicação de campos administrativos;
 8. ambiente de armazenamento institucional ou formalmente aprovado.
+9. definição das regras de elegibilidade e do canal oficial de confirmação.
 
 ## Inclusão pelo Plan-Assiste
 
@@ -55,4 +59,4 @@ Uma base própria do Plan-Assiste poderá ser adicionada como nova fonte sem alt
 5. publicar uma nova versão imutável;
 6. atualizar o manifesto após a validação.
 
-Não será criado um formulário público de upload. A inclusão de dados é uma operação administrativa e deverá ocorrer por processo autenticado e auditável.
+Um mesmo prestador poderá possuir mais de um item em `network_links`, preservando a identidade da unidade e registrando separadamente as redes pelas quais o atendimento pode ser acessado. Não será criado um formulário público de upload. A inclusão de dados é uma operação administrativa e deverá ocorrer por processo autenticado e auditável.

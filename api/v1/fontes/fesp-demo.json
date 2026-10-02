@@ -1,0 +1,2745 @@
+{
+  "schema_version": "3.0.0",
+  "environment": "demo",
+  "generated_at": "2026-10-02T22:00:00Z",
+  "authorization": {
+    "status": "synthetic-demo",
+    "reference": null
+  },
+  "source": {
+    "id": "fesp-demo",
+    "name": "FESP — cobertura demonstrativa",
+    "kind": "cooperative-network",
+    "relationship_label": "Rede conveniada",
+    "coverage_scope": "regional",
+    "states": [
+      "SP"
+    ],
+    "record_count": 60,
+    "status": "synthetic-demo",
+    "verification_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+  },
+  "record_count": 60,
+  "records": [
+    {
+      "public_id": "profissional-fesp-demo-001",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 001",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00001"
+      },
+      "specialties": [
+        {
+          "name": "Ginecologia",
+          "rqe": "DEMO-RQE-0001"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0001",
+          "facility_name": "Unidade Assistencial Demonstrativa São Paulo",
+          "phones": [
+            "(11) 0000-0101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0001",
+            "district": "Bairro demonstrativo 1",
+            "city": "São Paulo",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-002",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 002",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00002"
+      },
+      "specialties": [
+        {
+          "name": "Hematologia",
+          "rqe": "DEMO-RQE-0002"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0002",
+          "facility_name": "Unidade Assistencial Demonstrativa Campinas",
+          "phones": [
+            "(11) 0000-0201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0002",
+            "district": "Bairro demonstrativo 2",
+            "city": "Campinas",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-003",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 003",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00003"
+      },
+      "specialties": [
+        {
+          "name": "Infectologia",
+          "rqe": "DEMO-RQE-0003"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0003",
+          "facility_name": "Unidade Assistencial Demonstrativa Santos",
+          "phones": [
+            "(11) 0000-0301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0003",
+            "district": "Bairro demonstrativo 3",
+            "city": "Santos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-004",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 004",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00004"
+      },
+      "specialties": [
+        {
+          "name": "Mastologia",
+          "rqe": "DEMO-RQE-0004"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0004",
+          "facility_name": "Unidade Assistencial Demonstrativa Sorocaba",
+          "phones": [
+            "(11) 0000-0401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0004",
+            "district": "Bairro demonstrativo 4",
+            "city": "Sorocaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-005",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 005",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00005"
+      },
+      "specialties": [
+        {
+          "name": "Medicina de família",
+          "rqe": "DEMO-RQE-0005"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0005",
+          "facility_name": "Unidade Assistencial Demonstrativa Ribeirão Preto",
+          "phones": [
+            "(11) 0000-0501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0005",
+            "district": "Bairro demonstrativo 5",
+            "city": "Ribeirão Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-006",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 006",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00006"
+      },
+      "specialties": [
+        {
+          "name": "Medicina do trabalho",
+          "rqe": "DEMO-RQE-0006"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0006",
+          "facility_name": "Unidade Assistencial Demonstrativa São José dos Campos",
+          "phones": [
+            "(19) 0000-0601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0006",
+            "district": "Bairro demonstrativo 6",
+            "city": "São José dos Campos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-007",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 007",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00007"
+      },
+      "specialties": [
+        {
+          "name": "Medicina esportiva",
+          "rqe": "DEMO-RQE-0007"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0007",
+          "facility_name": "Unidade Assistencial Demonstrativa Bauru",
+          "phones": [
+            "(19) 0000-0701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0007",
+            "district": "Bairro demonstrativo 7",
+            "city": "Bauru",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-008",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 008",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00008"
+      },
+      "specialties": [
+        {
+          "name": "Nefrologia",
+          "rqe": "DEMO-RQE-0008"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0008",
+          "facility_name": "Unidade Assistencial Demonstrativa Jundiaí",
+          "phones": [
+            "(19) 0000-0801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0008",
+            "district": "Bairro demonstrativo 8",
+            "city": "Jundiaí",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-009",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 009",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00009"
+      },
+      "specialties": [
+        {
+          "name": "Neurocirurgia",
+          "rqe": "DEMO-RQE-0009"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0009",
+          "facility_name": "Unidade Assistencial Demonstrativa São José do Rio Preto",
+          "phones": [
+            "(19) 0000-0901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0009",
+            "district": "Bairro demonstrativo 9",
+            "city": "São José do Rio Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-010",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 010",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00010"
+      },
+      "specialties": [
+        {
+          "name": "Neurologia",
+          "rqe": "DEMO-RQE-0010"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0010",
+          "facility_name": "Unidade Assistencial Demonstrativa Piracicaba",
+          "phones": [
+            "(19) 0000-1001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0010",
+            "district": "Bairro demonstrativo 10",
+            "city": "Piracicaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-011",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 011",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00011"
+      },
+      "specialties": [
+        {
+          "name": "Nutrologia",
+          "rqe": "DEMO-RQE-0011"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0011",
+          "facility_name": "Unidade Assistencial Demonstrativa São Paulo",
+          "phones": [
+            "(11) 0000-1101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0011",
+            "district": "Bairro demonstrativo 1",
+            "city": "São Paulo",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-012",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 012",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00012"
+      },
+      "specialties": [
+        {
+          "name": "Obstetrícia",
+          "rqe": "DEMO-RQE-0012"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0012",
+          "facility_name": "Unidade Assistencial Demonstrativa Campinas",
+          "phones": [
+            "(11) 0000-1201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0012",
+            "district": "Bairro demonstrativo 2",
+            "city": "Campinas",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-013",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 013",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00013"
+      },
+      "specialties": [
+        {
+          "name": "Oftalmologia",
+          "rqe": "DEMO-RQE-0013"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0013",
+          "facility_name": "Unidade Assistencial Demonstrativa Santos",
+          "phones": [
+            "(11) 0000-1301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0013",
+            "district": "Bairro demonstrativo 3",
+            "city": "Santos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-014",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 014",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00014"
+      },
+      "specialties": [
+        {
+          "name": "Oncologia clínica",
+          "rqe": "DEMO-RQE-0014"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0014",
+          "facility_name": "Unidade Assistencial Demonstrativa Sorocaba",
+          "phones": [
+            "(11) 0000-1401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0014",
+            "district": "Bairro demonstrativo 4",
+            "city": "Sorocaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-015",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 015",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00015"
+      },
+      "specialties": [
+        {
+          "name": "Ortopedia",
+          "rqe": "DEMO-RQE-0015"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0015",
+          "facility_name": "Unidade Assistencial Demonstrativa Ribeirão Preto",
+          "phones": [
+            "(11) 0000-1501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0015",
+            "district": "Bairro demonstrativo 5",
+            "city": "Ribeirão Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-016",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 016",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00016"
+      },
+      "specialties": [
+        {
+          "name": "Otorrinolaringologia",
+          "rqe": "DEMO-RQE-0016"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0016",
+          "facility_name": "Unidade Assistencial Demonstrativa São José dos Campos",
+          "phones": [
+            "(19) 0000-1601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0016",
+            "district": "Bairro demonstrativo 6",
+            "city": "São José dos Campos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-017",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 017",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00017"
+      },
+      "specialties": [
+        {
+          "name": "Patologia",
+          "rqe": "DEMO-RQE-0017"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0017",
+          "facility_name": "Unidade Assistencial Demonstrativa Bauru",
+          "phones": [
+            "(19) 0000-1701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0017",
+            "district": "Bairro demonstrativo 7",
+            "city": "Bauru",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-018",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 018",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00018"
+      },
+      "specialties": [
+        {
+          "name": "Pediatria",
+          "rqe": "DEMO-RQE-0018"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0018",
+          "facility_name": "Unidade Assistencial Demonstrativa Jundiaí",
+          "phones": [
+            "(19) 0000-1801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0018",
+            "district": "Bairro demonstrativo 8",
+            "city": "Jundiaí",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-019",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 019",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00019"
+      },
+      "specialties": [
+        {
+          "name": "Pneumologia",
+          "rqe": "DEMO-RQE-0019"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0019",
+          "facility_name": "Unidade Assistencial Demonstrativa São José do Rio Preto",
+          "phones": [
+            "(19) 0000-1901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0019",
+            "district": "Bairro demonstrativo 9",
+            "city": "São José do Rio Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-020",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 020",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00020"
+      },
+      "specialties": [
+        {
+          "name": "Psiquiatria",
+          "rqe": "DEMO-RQE-0020"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0020",
+          "facility_name": "Unidade Assistencial Demonstrativa Piracicaba",
+          "phones": [
+            "(19) 0000-2001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0020",
+            "district": "Bairro demonstrativo 10",
+            "city": "Piracicaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-021",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 021",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00021"
+      },
+      "specialties": [
+        {
+          "name": "Radiologia",
+          "rqe": "DEMO-RQE-0021"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0021",
+          "facility_name": "Unidade Assistencial Demonstrativa São Paulo",
+          "phones": [
+            "(11) 0000-2101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0021",
+            "district": "Bairro demonstrativo 1",
+            "city": "São Paulo",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-022",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 022",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00022"
+      },
+      "specialties": [
+        {
+          "name": "Reumatologia",
+          "rqe": "DEMO-RQE-0022"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0022",
+          "facility_name": "Unidade Assistencial Demonstrativa Campinas",
+          "phones": [
+            "(11) 0000-2201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0022",
+            "district": "Bairro demonstrativo 2",
+            "city": "Campinas",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-023",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 023",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00023"
+      },
+      "specialties": [
+        {
+          "name": "Urologia",
+          "rqe": "DEMO-RQE-0023"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0023",
+          "facility_name": "Unidade Assistencial Demonstrativa Santos",
+          "phones": [
+            "(11) 0000-2301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0023",
+            "district": "Bairro demonstrativo 3",
+            "city": "Santos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-024",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 024",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00024"
+      },
+      "specialties": [
+        {
+          "name": "Medicina intensiva",
+          "rqe": "DEMO-RQE-0024"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0024",
+          "facility_name": "Unidade Assistencial Demonstrativa Sorocaba",
+          "phones": [
+            "(11) 0000-2401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0024",
+            "district": "Bairro demonstrativo 4",
+            "city": "Sorocaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-025",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 025",
+      "professional_registry": {
+        "council": "CRP",
+        "state": "SP",
+        "number": "DEMO-00025"
+      },
+      "specialties": [
+        {
+          "name": "Psicologia",
+          "rqe": "DEMO-RQE-0025"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0025",
+          "facility_name": "Unidade Assistencial Demonstrativa Ribeirão Preto",
+          "phones": [
+            "(11) 0000-2501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0025",
+            "district": "Bairro demonstrativo 5",
+            "city": "Ribeirão Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-026",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 026",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00026"
+      },
+      "specialties": [
+        {
+          "name": "Fisioterapia",
+          "rqe": "DEMO-RQE-0026"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0026",
+          "facility_name": "Unidade Assistencial Demonstrativa São José dos Campos",
+          "phones": [
+            "(19) 0000-2601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0026",
+            "district": "Bairro demonstrativo 6",
+            "city": "São José dos Campos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-027",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 027",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00027"
+      },
+      "specialties": [
+        {
+          "name": "Nutrição",
+          "rqe": "DEMO-RQE-0027"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0027",
+          "facility_name": "Unidade Assistencial Demonstrativa Bauru",
+          "phones": [
+            "(19) 0000-2701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0027",
+            "district": "Bairro demonstrativo 7",
+            "city": "Bauru",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-028",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 028",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00028"
+      },
+      "specialties": [
+        {
+          "name": "Odontologia",
+          "rqe": "DEMO-RQE-0028"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0028",
+          "facility_name": "Unidade Assistencial Demonstrativa Jundiaí",
+          "phones": [
+            "(19) 0000-2801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0028",
+            "district": "Bairro demonstrativo 8",
+            "city": "Jundiaí",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-029",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 029",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00029"
+      },
+      "specialties": [
+        {
+          "name": "Fonoaudiologia",
+          "rqe": "DEMO-RQE-0029"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0029",
+          "facility_name": "Unidade Assistencial Demonstrativa São José do Rio Preto",
+          "phones": [
+            "(19) 0000-2901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0029",
+            "district": "Bairro demonstrativo 9",
+            "city": "São José do Rio Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-030",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 030",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00030"
+      },
+      "specialties": [
+        {
+          "name": "Terapia ocupacional",
+          "rqe": "DEMO-RQE-0030"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0030",
+          "facility_name": "Unidade Assistencial Demonstrativa Piracicaba",
+          "phones": [
+            "(19) 0000-3001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0030",
+            "district": "Bairro demonstrativo 10",
+            "city": "Piracicaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-031",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 031",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00031"
+      },
+      "specialties": [
+        {
+          "name": "Enfermagem",
+          "rqe": "DEMO-RQE-0031"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0031",
+          "facility_name": "Unidade Assistencial Demonstrativa São Paulo",
+          "phones": [
+            "(11) 0000-3101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0031",
+            "district": "Bairro demonstrativo 1",
+            "city": "São Paulo",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-032",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 032",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00032"
+      },
+      "specialties": [
+        {
+          "name": "Serviço social",
+          "rqe": "DEMO-RQE-0032"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0032",
+          "facility_name": "Unidade Assistencial Demonstrativa Campinas",
+          "phones": [
+            "(11) 0000-3201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0032",
+            "district": "Bairro demonstrativo 2",
+            "city": "Campinas",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-033",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 033",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00033"
+      },
+      "specialties": [
+        {
+          "name": "Alergia e imunologia",
+          "rqe": "DEMO-RQE-0033"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0033",
+          "facility_name": "Unidade Assistencial Demonstrativa Santos",
+          "phones": [
+            "(11) 0000-3301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0033",
+            "district": "Bairro demonstrativo 3",
+            "city": "Santos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-034",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 034",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00034"
+      },
+      "specialties": [
+        {
+          "name": "Anestesiologia",
+          "rqe": "DEMO-RQE-0034"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0034",
+          "facility_name": "Unidade Assistencial Demonstrativa Sorocaba",
+          "phones": [
+            "(11) 0000-3401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0034",
+            "district": "Bairro demonstrativo 4",
+            "city": "Sorocaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-035",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 035",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00035"
+      },
+      "specialties": [
+        {
+          "name": "Angiologia",
+          "rqe": "DEMO-RQE-0035"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0035",
+          "facility_name": "Unidade Assistencial Demonstrativa Ribeirão Preto",
+          "phones": [
+            "(11) 0000-3501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0035",
+            "district": "Bairro demonstrativo 5",
+            "city": "Ribeirão Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-036",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 036",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00036"
+      },
+      "specialties": [
+        {
+          "name": "Cardiologia",
+          "rqe": "DEMO-RQE-0036"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0036",
+          "facility_name": "Unidade Assistencial Demonstrativa São José dos Campos",
+          "phones": [
+            "(19) 0000-3601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0036",
+            "district": "Bairro demonstrativo 6",
+            "city": "São José dos Campos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-037",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 037",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00037"
+      },
+      "specialties": [
+        {
+          "name": "Cirurgia cardiovascular",
+          "rqe": "DEMO-RQE-0037"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0037",
+          "facility_name": "Unidade Assistencial Demonstrativa Bauru",
+          "phones": [
+            "(19) 0000-3701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0037",
+            "district": "Bairro demonstrativo 7",
+            "city": "Bauru",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-038",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 038",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00038"
+      },
+      "specialties": [
+        {
+          "name": "Cirurgia geral",
+          "rqe": "DEMO-RQE-0038"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0038",
+          "facility_name": "Unidade Assistencial Demonstrativa Jundiaí",
+          "phones": [
+            "(19) 0000-3801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0038",
+            "district": "Bairro demonstrativo 8",
+            "city": "Jundiaí",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-039",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 039",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00039"
+      },
+      "specialties": [
+        {
+          "name": "Cirurgia pediátrica",
+          "rqe": "DEMO-RQE-0039"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0039",
+          "facility_name": "Unidade Assistencial Demonstrativa São José do Rio Preto",
+          "phones": [
+            "(19) 0000-3901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0039",
+            "district": "Bairro demonstrativo 9",
+            "city": "São José do Rio Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "profissional-fesp-demo-040",
+      "source_id": "fesp-demo",
+      "type": "professional",
+      "display_name": "Profissional demonstrativo 040",
+      "professional_registry": {
+        "council": "CRM",
+        "state": "SP",
+        "number": "DEMO-00040"
+      },
+      "specialties": [
+        {
+          "name": "Clínica médica",
+          "rqe": "DEMO-RQE-0040"
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0040",
+          "facility_name": "Unidade Assistencial Demonstrativa Piracicaba",
+          "phones": [
+            "(19) 0000-4001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0040",
+            "district": "Bairro demonstrativo 10",
+            "city": "Piracicaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-001",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo São Paulo 001",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Anestesiologia",
+          "rqe": null
+        },
+        {
+          "name": "Coloproctologia",
+          "rqe": null
+        },
+        {
+          "name": "Ortopedia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0001",
+          "facility_name": "Unidade assistencial Demonstrativa São Paulo",
+          "phones": [
+            "(11) 0000-0101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0001",
+            "district": "Bairro demonstrativo 1",
+            "city": "São Paulo",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-002",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Campinas 002",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Angiologia",
+          "rqe": null
+        },
+        {
+          "name": "Dermatologia",
+          "rqe": null
+        },
+        {
+          "name": "Otorrinolaringologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0002",
+          "facility_name": "Unidade assistencial Demonstrativa Campinas",
+          "phones": [
+            "(11) 0000-0201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0002",
+            "district": "Bairro demonstrativo 2",
+            "city": "Campinas",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-003",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Santos 003",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Cardiologia",
+          "rqe": null
+        },
+        {
+          "name": "Endocrinologia",
+          "rqe": null
+        },
+        {
+          "name": "Patologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0003",
+          "facility_name": "Unidade assistencial Demonstrativa Santos",
+          "phones": [
+            "(11) 0000-0301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0003",
+            "district": "Bairro demonstrativo 3",
+            "city": "Santos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-004",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Sorocaba 004",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Cirurgia cardiovascular",
+          "rqe": null
+        },
+        {
+          "name": "Endoscopia",
+          "rqe": null
+        },
+        {
+          "name": "Pediatria",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0004",
+          "facility_name": "Unidade assistencial Demonstrativa Sorocaba",
+          "phones": [
+            "(11) 0000-0401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0004",
+            "district": "Bairro demonstrativo 4",
+            "city": "Sorocaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-005",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Ribeirão Preto 005",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Cirurgia geral",
+          "rqe": null
+        },
+        {
+          "name": "Gastroenterologia",
+          "rqe": null
+        },
+        {
+          "name": "Pneumologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0005",
+          "facility_name": "Unidade assistencial Demonstrativa Ribeirão Preto",
+          "phones": [
+            "(11) 0000-0501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0005",
+            "district": "Bairro demonstrativo 5",
+            "city": "Ribeirão Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-006",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo São José dos Campos 006",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Cirurgia pediátrica",
+          "rqe": null
+        },
+        {
+          "name": "Genética médica",
+          "rqe": null
+        },
+        {
+          "name": "Psiquiatria",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0006",
+          "facility_name": "Unidade assistencial Demonstrativa São José dos Campos",
+          "phones": [
+            "(19) 0000-0601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0006",
+            "district": "Bairro demonstrativo 6",
+            "city": "São José dos Campos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-007",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Bauru 007",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Clínica médica",
+          "rqe": null
+        },
+        {
+          "name": "Geriatria",
+          "rqe": null
+        },
+        {
+          "name": "Radiologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0007",
+          "facility_name": "Unidade assistencial Demonstrativa Bauru",
+          "phones": [
+            "(19) 0000-0701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0007",
+            "district": "Bairro demonstrativo 7",
+            "city": "Bauru",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-008",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Jundiaí 008",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Coloproctologia",
+          "rqe": null
+        },
+        {
+          "name": "Ginecologia",
+          "rqe": null
+        },
+        {
+          "name": "Reumatologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0008",
+          "facility_name": "Unidade assistencial Demonstrativa Jundiaí",
+          "phones": [
+            "(19) 0000-0801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0008",
+            "district": "Bairro demonstrativo 8",
+            "city": "Jundiaí",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-009",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo São José do Rio Preto 009",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Dermatologia",
+          "rqe": null
+        },
+        {
+          "name": "Hematologia",
+          "rqe": null
+        },
+        {
+          "name": "Urologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0009",
+          "facility_name": "Unidade assistencial Demonstrativa São José do Rio Preto",
+          "phones": [
+            "(19) 0000-0901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0009",
+            "district": "Bairro demonstrativo 9",
+            "city": "São José do Rio Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-010",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Piracicaba 010",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Endocrinologia",
+          "rqe": null
+        },
+        {
+          "name": "Infectologia",
+          "rqe": null
+        },
+        {
+          "name": "Medicina intensiva",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0010",
+          "facility_name": "Unidade assistencial Demonstrativa Piracicaba",
+          "phones": [
+            "(19) 0000-1001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0010",
+            "district": "Bairro demonstrativo 10",
+            "city": "Piracicaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-011",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo São Paulo 011",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Endoscopia",
+          "rqe": null
+        },
+        {
+          "name": "Mastologia",
+          "rqe": null
+        },
+        {
+          "name": "Psicologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0011",
+          "facility_name": "Unidade assistencial Demonstrativa São Paulo",
+          "phones": [
+            "(11) 0000-1101"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0011",
+            "district": "Bairro demonstrativo 1",
+            "city": "São Paulo",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-012",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Campinas 012",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Gastroenterologia",
+          "rqe": null
+        },
+        {
+          "name": "Medicina de família",
+          "rqe": null
+        },
+        {
+          "name": "Fisioterapia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0012",
+          "facility_name": "Unidade assistencial Demonstrativa Campinas",
+          "phones": [
+            "(11) 0000-1201"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0012",
+            "district": "Bairro demonstrativo 2",
+            "city": "Campinas",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-013",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Santos 013",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Genética médica",
+          "rqe": null
+        },
+        {
+          "name": "Medicina do trabalho",
+          "rqe": null
+        },
+        {
+          "name": "Nutrição",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0013",
+          "facility_name": "Unidade assistencial Demonstrativa Santos",
+          "phones": [
+            "(11) 0000-1301"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0013",
+            "district": "Bairro demonstrativo 3",
+            "city": "Santos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-014",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Sorocaba 014",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Geriatria",
+          "rqe": null
+        },
+        {
+          "name": "Medicina esportiva",
+          "rqe": null
+        },
+        {
+          "name": "Odontologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0014",
+          "facility_name": "Unidade assistencial Demonstrativa Sorocaba",
+          "phones": [
+            "(11) 0000-1401"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0014",
+            "district": "Bairro demonstrativo 4",
+            "city": "Sorocaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-015",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Ribeirão Preto 015",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Ginecologia",
+          "rqe": null
+        },
+        {
+          "name": "Nefrologia",
+          "rqe": null
+        },
+        {
+          "name": "Fonoaudiologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0015",
+          "facility_name": "Unidade assistencial Demonstrativa Ribeirão Preto",
+          "phones": [
+            "(11) 0000-1501"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0015",
+            "district": "Bairro demonstrativo 5",
+            "city": "Ribeirão Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-016",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo São José dos Campos 016",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Hematologia",
+          "rqe": null
+        },
+        {
+          "name": "Neurocirurgia",
+          "rqe": null
+        },
+        {
+          "name": "Terapia ocupacional",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0016",
+          "facility_name": "Unidade assistencial Demonstrativa São José dos Campos",
+          "phones": [
+            "(19) 0000-1601"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0016",
+            "district": "Bairro demonstrativo 6",
+            "city": "São José dos Campos",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-017",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Bauru 017",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Infectologia",
+          "rqe": null
+        },
+        {
+          "name": "Neurologia",
+          "rqe": null
+        },
+        {
+          "name": "Enfermagem",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0017",
+          "facility_name": "Unidade assistencial Demonstrativa Bauru",
+          "phones": [
+            "(19) 0000-1701"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0017",
+            "district": "Bairro demonstrativo 7",
+            "city": "Bauru",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-018",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Jundiaí 018",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Mastologia",
+          "rqe": null
+        },
+        {
+          "name": "Nutrologia",
+          "rqe": null
+        },
+        {
+          "name": "Serviço social",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0018",
+          "facility_name": "Unidade assistencial Demonstrativa Jundiaí",
+          "phones": [
+            "(19) 0000-1801"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0018",
+            "district": "Bairro demonstrativo 8",
+            "city": "Jundiaí",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-019",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo São José do Rio Preto 019",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Medicina de família",
+          "rqe": null
+        },
+        {
+          "name": "Obstetrícia",
+          "rqe": null
+        },
+        {
+          "name": "Alergia e imunologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0019",
+          "facility_name": "Unidade assistencial Demonstrativa São José do Rio Preto",
+          "phones": [
+            "(19) 0000-1901"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0019",
+            "district": "Bairro demonstrativo 9",
+            "city": "São José do Rio Preto",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    },
+    {
+      "public_id": "estabelecimento-fesp-demo-020",
+      "source_id": "fesp-demo",
+      "type": "facility",
+      "display_name": "Unidade assistencial demonstrativo Piracicaba 020",
+      "professional_registry": null,
+      "specialties": [
+        {
+          "name": "Medicina do trabalho",
+          "rqe": null
+        },
+        {
+          "name": "Oftalmologia",
+          "rqe": null
+        },
+        {
+          "name": "Anestesiologia",
+          "rqe": null
+        }
+      ],
+      "service_locations": [
+        {
+          "facility_public_id": "unidade-demo-sp-0020",
+          "facility_name": "Unidade assistencial Demonstrativa Piracicaba",
+          "phones": [
+            "(19) 0000-2001"
+          ],
+          "address": {
+            "street": "Endereço exclusivamente demonstrativo 0020",
+            "district": "Bairro demonstrativo 10",
+            "city": "Piracicaba",
+            "state": "SP"
+          }
+        }
+      ],
+      "network_links": [
+        {
+          "source_id": "fesp-demo",
+          "relationship_type": "cooperative-network",
+          "relationship_label": "Rede conveniada",
+          "coverage_scope": "regional",
+          "access_mode": "Rede conveniada",
+          "verification_required": true,
+          "availability_notice": "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais."
+        }
+      ],
+      "source_updated_at": "2026-10-02T22:00:00Z"
+    }
+  ]
+}

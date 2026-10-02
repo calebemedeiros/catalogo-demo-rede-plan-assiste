@@ -1,19 +1,20 @@
 # Catálogo demonstrativo da rede Plan-Assiste
 
-API estática utilizada pelo painel de consulta da rede Plan-Assiste para demonstrar o consumo de uma fonte externa e a consolidação de diferentes redes de prestadores.
+API estática utilizada pelo painel nacional da rede Plan-Assiste para demonstrar o consumo de uma fonte externa e a consolidação de diferentes formas de acesso.
 
 ## Importante
 
-Todos os registros são sintéticos. Este repositório não contém nomes, registros profissionais, telefones ou endereços reais e não representa a rede oficial da AMHPDF ou do Plan-Assiste.
+Todos os registros são sintéticos. Este repositório não contém nomes, registros profissionais, telefones ou endereços reais e não representa a rede oficial do Plan-Assiste, AMHPDF, CNU, FESP, Unimeds ou Rede D'Or. A presença de um registro não representa cobertura, autorização ou disponibilidade.
 
 ## Composição da amostra
 
 - 300 médicos da fonte **AMHPDF — amostra demonstrativa**;
-- 40 profissionais da fonte **Plan-Assiste — credenciamento direto demonstrativo**;
-- 20 estabelecimentos da fonte direta demonstrativa;
-- 360 registros no total;
-- 40 especialidades médicas, além de outras categorias assistenciais;
-- 20 regiões e locais de atendimento simulados.
+- 60 registros de **credenciamento direto demonstrativo**;
+- 60 registros sintéticos para cada fonte CNU, FESP, Unimeds regionais e Rede D'Or;
+- 600 registros no total;
+- 500 profissionais e 100 estabelecimentos;
+- 48 especialidades e categorias assistenciais;
+- 20 UFs representadas por localidades inteiramente simuladas.
 
 ## Endpoints estáticos
 
@@ -23,7 +24,11 @@ Após a publicação no GitHub Pages:
 /api/v1/manifest.json
 /api/v1/prestadores.json
 /api/v1/fontes/amhpdf-demo.json
-/api/v1/fontes/plan-assiste-demo.json
+/api/v1/fontes/plan-assiste-direto-demo.json
+/api/v1/fontes/cnu-demo.json
+/api/v1/fontes/fesp-demo.json
+/api/v1/fontes/unimeds-demo.json
+/api/v1/fontes/rede-dor-demo.json
 ```
 
 O painel consulta primeiro o manifesto, verifica a versão, o ambiente, a autorização demonstrativa, a quantidade de registros e o SHA-256. Somente depois carrega o catálogo.

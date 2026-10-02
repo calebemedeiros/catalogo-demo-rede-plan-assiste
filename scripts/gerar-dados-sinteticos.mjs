@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, rm, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -7,167 +7,193 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const apiDir = path.join(root, "api", "v1");
 const sourcesDir = path.join(apiDir, "fontes");
 const modelsDir = path.join(root, "modelos");
-const generatedAt = "2026-10-02T21:00:00Z";
+const generatedAt = "2026-10-02T22:00:00Z";
 
+await rm(sourcesDir, { recursive: true, force: true });
 await mkdir(sourcesDir, { recursive: true });
 await mkdir(modelsDir, { recursive: true });
 
-const medicalSpecialties = [
+const specialties = [
   "Alergia e imunologia", "Anestesiologia", "Angiologia", "Cardiologia",
   "Cirurgia cardiovascular", "Cirurgia geral", "Cirurgia pediátrica", "Clínica médica",
   "Coloproctologia", "Dermatologia", "Endocrinologia", "Endoscopia",
   "Gastroenterologia", "Genética médica", "Geriatria", "Ginecologia",
-  "Hematologia", "Homeopatia", "Infectologia", "Mastologia",
-  "Medicina de família", "Medicina do trabalho", "Medicina esportiva", "Nefrologia",
-  "Neurocirurgia", "Neurologia", "Nutrologia", "Obstetrícia",
-  "Oftalmologia", "Oncologia clínica", "Ortopedia", "Otorrinolaringologia",
-  "Patologia", "Pediatria", "Pneumologia", "Psiquiatria",
-  "Radiologia", "Reumatologia", "Urologia", "Medicina intensiva"
+  "Hematologia", "Infectologia", "Mastologia", "Medicina de família",
+  "Medicina do trabalho", "Medicina esportiva", "Nefrologia", "Neurocirurgia",
+  "Neurologia", "Nutrologia", "Obstetrícia", "Oftalmologia", "Oncologia clínica",
+  "Ortopedia", "Otorrinolaringologia", "Patologia", "Pediatria", "Pneumologia",
+  "Psiquiatria", "Radiologia", "Reumatologia", "Urologia", "Medicina intensiva",
+  "Psicologia", "Fisioterapia", "Nutrição", "Odontologia", "Fonoaudiologia",
+  "Terapia ocupacional", "Enfermagem", "Serviço social"
 ];
 
-const districts = [
-  "Águas Claras", "Asa Norte", "Asa Sul", "Ceilândia", "Gama",
-  "Guará", "Lago Norte", "Lago Sul", "Núcleo Bandeirante", "Paranoá",
-  "Planaltina", "Recanto das Emas", "Samambaia", "Santa Maria", "São Sebastião",
-  "Sobradinho", "Sudoeste", "Taguatinga", "Vicente Pires", "Riacho Fundo"
+const nationalLocations = [
+  { city: "Rio Branco", state: "AC", district: "Centro", ddd: "68" },
+  { city: "Manaus", state: "AM", district: "Adrianópolis", ddd: "92" },
+  { city: "Belém", state: "PA", district: "Umarizal", ddd: "91" },
+  { city: "Porto Velho", state: "RO", district: "Olaria", ddd: "69" },
+  { city: "Palmas", state: "TO", district: "Plano Diretor Sul", ddd: "63" },
+  { city: "São Luís", state: "MA", district: "Renascença", ddd: "98" },
+  { city: "Fortaleza", state: "CE", district: "Aldeota", ddd: "85" },
+  { city: "Natal", state: "RN", district: "Tirol", ddd: "84" },
+  { city: "Recife", state: "PE", district: "Boa Viagem", ddd: "81" },
+  { city: "Salvador", state: "BA", district: "Pituba", ddd: "71" },
+  { city: "Brasília", state: "DF", district: "Asa Norte", ddd: "61" },
+  { city: "Goiânia", state: "GO", district: "Setor Bueno", ddd: "62" },
+  { city: "Cuiabá", state: "MT", district: "Centro Sul", ddd: "65" },
+  { city: "Campo Grande", state: "MS", district: "Jardim dos Estados", ddd: "67" },
+  { city: "Belo Horizonte", state: "MG", district: "Funcionários", ddd: "31" },
+  { city: "Vitória", state: "ES", district: "Praia do Canto", ddd: "27" },
+  { city: "Rio de Janeiro", state: "RJ", district: "Botafogo", ddd: "21" },
+  { city: "São Paulo", state: "SP", district: "Bela Vista", ddd: "11" },
+  { city: "Curitiba", state: "PR", district: "Batel", ddd: "41" },
+  { city: "Porto Alegre", state: "RS", district: "Moinhos de Vento", ddd: "51" }
 ];
 
-const facilityNames = districts.map((district, index) =>
-  index % 4 === 0
-    ? `Hospital Modelo ${district}`
-    : index % 4 === 1
-      ? `Centro Clínico Modelo ${district}`
-      : index % 4 === 2
-        ? `Unidade Assistencial Modelo ${district}`
-        : `Instituto de Saúde Modelo ${district}`
-);
+const dfDistricts = [
+  "Águas Claras", "Asa Norte", "Asa Sul", "Ceilândia", "Gama", "Guará",
+  "Lago Norte", "Lago Sul", "Núcleo Bandeirante", "Paranoá", "Planaltina",
+  "Recanto das Emas", "Samambaia", "Santa Maria", "São Sebastião", "Sobradinho",
+  "Sudoeste", "Taguatinga", "Vicente Pires", "Riacho Fundo"
+];
+
+const spLocations = [
+  "São Paulo", "Campinas", "Santos", "Sorocaba", "Ribeirão Preto",
+  "São José dos Campos", "Bauru", "Jundiaí", "São José do Rio Preto", "Piracicaba"
+].map((city, index) => ({ city, state: "SP", district: `Bairro demonstrativo ${index + 1}`, ddd: index < 5 ? "11" : "19" }));
 
 const pad = (value, size = 3) => String(value).padStart(size, "0");
 
-const addressFor = (index) => ({
-  street: `Endereço exclusivamente demonstrativo ${pad(index + 1)}`,
-  district: districts[index],
-  city: "Brasília",
-  state: "DF"
-});
-
-const locationFor = (index, phoneSuffix = 0) => ({
-  facility_public_id: `estabelecimento-demo-${pad(index + 1)}`,
-  facility_name: facilityNames[index],
-  phones: [`(61) 0000-${pad(index + 1, 2)}${pad(phoneSuffix + 1, 2)}`],
-  address: addressFor(index)
-});
-
-const amhpRecords = Array.from({ length: 300 }, (_, offset) => {
-  const number = offset + 1;
-  const specialtyIndex = offset % medicalSpecialties.length;
-  const locations = [locationFor(offset % districts.length, offset % 9)];
-  if (number % 5 === 0) locations.push(locationFor((offset + 7) % districts.length, (offset + 2) % 9));
-  const specialties = [{
-    name: medicalSpecialties[specialtyIndex],
-    rqe: `DEMO-RQE-${pad(number, 4)}`
-  }];
-  if (number % 6 === 0) {
-    specialties.push({
-      name: medicalSpecialties[(specialtyIndex + 9) % medicalSpecialties.length],
-      rqe: `DEMO-RQE-${pad(number + 500, 4)}`
-    });
-  }
-  return {
-    public_id: `profissional-amhpdf-demo-${pad(number)}`,
-    source_id: "amhpdf-demo",
-    type: "professional",
-    display_name: `Médico AMHPDF demonstrativo ${pad(number)}`,
-    professional_registry: { council: "CRM", state: "DF", number: `DEMO-${pad(number, 5)}` },
-    specialties,
-    service_locations: locations,
-    source_updated_at: generatedAt
-  };
-});
-
-const directProfiles = [
-  { specialty: "Psicologia", council: "CRP" },
-  { specialty: "Fisioterapia", council: "CREFITO" },
-  { specialty: "Nutrição", council: "CRN" },
-  { specialty: "Odontologia", council: "CRO" },
-  { specialty: "Fonoaudiologia", council: "CREFONO" },
-  { specialty: "Terapia ocupacional", council: "CREFITO" },
-  { specialty: "Enfermagem", council: "COREN" },
-  { specialty: "Serviço social", council: "CRESS" }
-];
-
-const directProfessionals = Array.from({ length: 40 }, (_, offset) => {
-  const number = offset + 1;
-  const profile = directProfiles[offset % directProfiles.length];
-  return {
-    public_id: `profissional-plan-assiste-demo-${pad(number)}`,
-    source_id: "plan-assiste-direto-demo",
-    type: "professional",
-    display_name: `Prestador Plan-Assiste demonstrativo ${pad(number)}`,
-    professional_registry: { council: profile.council, state: "DF", number: `DEMO-${pad(number, 5)}` },
-    specialties: [{ name: profile.specialty, rqe: null }],
-    service_locations: [locationFor((offset * 3) % districts.length, (offset + 4) % 9)],
-    source_updated_at: generatedAt
-  };
-});
-
-const facilitySpecialties = [
-  ["Cardiologia", "Clínica médica", "Radiologia"],
-  ["Pediatria", "Ginecologia", "Obstetrícia"],
-  ["Ortopedia", "Fisioterapia", "Medicina esportiva"],
-  ["Oftalmologia", "Otorrinolaringologia", "Fonoaudiologia"],
-  ["Psicologia", "Psiquiatria", "Terapia ocupacional"]
-];
-
-const facilities = Array.from({ length: 20 }, (_, offset) => ({
-  public_id: `estabelecimento-demo-${pad(offset + 1)}`,
-  source_id: "plan-assiste-direto-demo",
-  type: "facility",
-  display_name: facilityNames[offset],
-  professional_registry: null,
-  specialties: facilitySpecialties[offset % facilitySpecialties.length].map((name) => ({ name, rqe: null })),
-  service_locations: [locationFor(offset, 0)],
-  source_updated_at: generatedAt
-}));
-
 const sourceDefinitions = [
-  {
-    id: "amhpdf-demo",
-    name: "AMHPDF — amostra demonstrativa",
-    kind: "partner-network",
-    status: "synthetic-demo",
-    record_count: amhpRecords.length
-  },
-  {
-    id: "plan-assiste-direto-demo",
-    name: "Plan-Assiste — credenciamento direto demonstrativo",
-    kind: "direct-network",
-    status: "synthetic-demo",
-    record_count: directProfessionals.length + facilities.length
-  }
+  { id: "amhpdf-demo", name: "AMHPDF — amostra demonstrativa", kind: "partner-network", relationship_label: "Rede parceira", coverage_scope: "regional", states: ["DF"] },
+  { id: "plan-assiste-direto-demo", name: "Plan-Assiste — credenciamento direto demonstrativo", kind: "direct-network", relationship_label: "Credenciamento direto", coverage_scope: "national", states: nationalLocations.map((item) => item.state) },
+  { id: "cnu-demo", name: "CNU — cobertura demonstrativa", kind: "cooperative-network", relationship_label: "Rede conveniada", coverage_scope: "national", states: nationalLocations.map((item) => item.state) },
+  { id: "fesp-demo", name: "FESP — cobertura demonstrativa", kind: "cooperative-network", relationship_label: "Rede conveniada", coverage_scope: "regional", states: ["SP"] },
+  { id: "unimeds-demo", name: "Unimeds regionais — cobertura demonstrativa", kind: "cooperative-network", relationship_label: "Intercâmbio regional", coverage_scope: "national", states: nationalLocations.map((item) => item.state) },
+  { id: "rede-dor-demo", name: "Rede D'Or — cobertura demonstrativa", kind: "hospital-network", relationship_label: "Rede hospitalar", coverage_scope: "national", states: ["BA", "DF", "MG", "PE", "RJ", "SP"] }
 ];
+
+const accessText = "Atendimento sujeito à elegibilidade, autorização, disponibilidade e confirmação nos canais oficiais.";
+
+function networkLink(source) {
+  return {
+    source_id: source.id,
+    relationship_type: source.kind,
+    relationship_label: source.relationship_label,
+    coverage_scope: source.coverage_scope,
+    access_mode: source.kind === "direct-network" ? "Credenciamento direto" : "Rede conveniada",
+    verification_required: true,
+    availability_notice: accessText
+  };
+}
+
+function locationFor(location, sequence, facilityPrefix = "Unidade Assistencial") {
+  return {
+    facility_public_id: `unidade-demo-${location.state.toLowerCase()}-${pad(sequence, 4)}`,
+    facility_name: `${facilityPrefix} Demonstrativa ${location.city}`,
+    phones: [`(${location.ddd}) 0000-${pad(sequence % 100, 2)}01`],
+    address: {
+      street: `Endereço exclusivamente demonstrativo ${pad(sequence, 4)}`,
+      district: location.district,
+      city: location.city,
+      state: location.state
+    }
+  };
+}
+
+function professionalRecord({ source, number, location, namePrefix = "Profissional", specialtyOffset = 0 }) {
+  const specialty = specialties[(number - 1 + specialtyOffset) % specialties.length];
+  return {
+    public_id: `profissional-${source.id}-${pad(number)}`,
+    source_id: source.id,
+    type: "professional",
+    display_name: `${namePrefix} demonstrativo ${pad(number)}`,
+    professional_registry: { council: specialty === "Psicologia" ? "CRP" : "CRM", state: location.state, number: `DEMO-${pad(number, 5)}` },
+    specialties: [{ name: specialty, rqe: `DEMO-RQE-${pad(number, 4)}` }],
+    service_locations: [locationFor(location, number)],
+    network_links: [networkLink(source)],
+    source_updated_at: generatedAt
+  };
+}
+
+function facilityRecord({ source, number, location, namePrefix = "Hospital" }) {
+  return {
+    public_id: `estabelecimento-${source.id}-${pad(number)}`,
+    source_id: source.id,
+    type: "facility",
+    display_name: `${namePrefix} demonstrativo ${location.city} ${pad(number)}`,
+    professional_registry: null,
+    specialties: [0, 7, 28].map((offset) => ({ name: specialties[(number + offset) % specialties.length], rqe: null })),
+    service_locations: [locationFor(location, number, namePrefix)],
+    network_links: [networkLink(source)],
+    source_updated_at: generatedAt
+  };
+}
+
+const amhpSource = sourceDefinitions[0];
+const amhpRecords = Array.from({ length: 300 }, (_, index) => {
+  const location = { city: "Brasília", state: "DF", district: dfDistricts[index % dfDistricts.length], ddd: "61" };
+  return professionalRecord({ source: amhpSource, number: index + 1, location, namePrefix: "Médico AMHPDF" });
+});
+
+const sourceLocations = {
+  "plan-assiste-direto-demo": nationalLocations,
+  "cnu-demo": nationalLocations,
+  "fesp-demo": spLocations,
+  "unimeds-demo": [...nationalLocations].reverse(),
+  "rede-dor-demo": nationalLocations.filter((item) => ["BA", "DF", "MG", "PE", "RJ", "SP"].includes(item.state))
+};
+
+const otherRecords = sourceDefinitions.slice(1).flatMap((source, sourceIndex) => {
+  const locations = sourceLocations[source.id];
+  const professionals = Array.from({ length: 40 }, (_, index) => professionalRecord({
+    source,
+    number: index + 1,
+    location: locations[index % locations.length],
+    namePrefix: source.kind === "hospital-network" ? "Especialista hospitalar" : "Profissional",
+    specialtyOffset: (sourceIndex + 1) * 5
+  }));
+  const facilities = Array.from({ length: 20 }, (_, index) => facilityRecord({
+    source,
+    number: index + 1,
+    location: locations[index % locations.length],
+    namePrefix: source.kind === "hospital-network" ? "Hospital de rede" : "Unidade assistencial"
+  }));
+  return [...professionals, ...facilities];
+});
+
+const records = [...amhpRecords, ...otherRecords];
+for (const source of sourceDefinitions) {
+  source.record_count = records.filter((record) => record.source_id === source.id).length;
+  source.status = "synthetic-demo";
+  source.verification_notice = accessText;
+}
 
 const catalog = {
-  schema_version: "2.0.0",
+  schema_version: "3.0.0",
   environment: "demo",
   generated_at: generatedAt,
   expires_at: "2027-01-31T23:59:59Z",
   source: {
-    name: "Catálogo integrado demonstrativo Plan-Assiste",
+    name: "Catálogo nacional multifonte demonstrativo Plan-Assiste",
     public_url: "https://github.com/calebemedeiros/catalogo-demo-rede-plan-assiste",
-    plan_id: 639,
-    plan_name: "PLAN ASSISTE (MPU) — referência demonstrativa"
+    plan_name: "PLAN-ASSISTE MPU — referência demonstrativa"
   },
   authorization: { status: "synthetic-demo", reference: null },
+  notices: {
+    synthetic_data: true,
+    eligibility: accessText,
+    official_status: "Esta demonstração não representa a rede oficial ou garantia de cobertura."
+  },
   sources: sourceDefinitions,
-  record_count: amhpRecords.length + directProfessionals.length + facilities.length,
-  records: [...amhpRecords, ...directProfessionals, ...facilities]
+  record_count: records.length,
+  records
 };
 
 const catalogText = `${JSON.stringify(catalog, null, 2)}\n`;
 const checksum = createHash("sha256").update(catalogText).digest("hex");
 const manifest = {
-  schema_version: "2.0.0",
+  schema_version: "3.0.0",
   environment: "demo",
   generated_at: generatedAt,
   catalog_url: "./prestadores.json",
@@ -177,28 +203,30 @@ const manifest = {
   authorization: { status: "synthetic-demo", reference: null }
 };
 
-const sourceFile = (definition, records) => ({
-  schema_version: "2.0.0",
-  environment: "demo",
-  generated_at: generatedAt,
-  authorization: { status: "synthetic-demo", reference: null },
-  source: definition,
-  record_count: records.length,
-  records
-});
+function sourceFile(definition) {
+  const sourceRecords = records.filter((record) => record.source_id === definition.id);
+  return {
+    schema_version: "3.0.0",
+    environment: "demo",
+    generated_at: generatedAt,
+    authorization: { status: "synthetic-demo", reference: null },
+    source: definition,
+    record_count: sourceRecords.length,
+    records: sourceRecords
+  };
+}
 
 await Promise.all([
   writeFile(path.join(apiDir, "prestadores.json"), catalogText, "utf8"),
   writeFile(path.join(apiDir, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`, "utf8"),
-  writeFile(path.join(sourcesDir, "amhpdf-demo.json"), `${JSON.stringify(sourceFile(sourceDefinitions[0], amhpRecords), null, 2)}\n`, "utf8"),
-  writeFile(path.join(sourcesDir, "plan-assiste-demo.json"), `${JSON.stringify(sourceFile(sourceDefinitions[1], [...directProfessionals, ...facilities]), null, 2)}\n`, "utf8"),
+  ...sourceDefinitions.map((source) => writeFile(path.join(sourcesDir, `${source.id}.json`), `${JSON.stringify(sourceFile(source), null, 2)}\n`, "utf8")),
   writeFile(
     path.join(modelsDir, "modelo-importacao.csv"),
-    "source_id;type;display_name;council;state;registry_number;specialty;rqe;facility_name;phone;street;district;city;state_address\n" +
-      "nova-fonte-demo;professional;Prestador demonstrativo;CONSELHO;DF;DEMO-00001;Especialidade demonstrativa;;Unidade Modelo;(61) 0000-0000;Endereço demonstrativo;Asa Sul;Brasília;DF\n",
+    "source_id;relationship_type;type;display_name;council;registry_state;registry_number;specialty;rqe;facility_name;phone;street;district;city;state;source_updated_at\n" +
+      "nova-fonte-demo;partner-network;professional;Prestador demonstrativo;CRM;DF;DEMO-00001;Especialidade demonstrativa;;Unidade Modelo;(61) 0000-0000;Endereço demonstrativo;Asa Sul;Brasília;DF;2026-10-02T22:00:00Z\n",
     "utf8"
   )
 ]);
 
-console.log(`Gerados ${catalog.record_count} registros sintéticos em ${sourceDefinitions.length} fontes.`);
+console.log(`Gerados ${catalog.record_count} registros sintéticos em ${sourceDefinitions.length} fontes nacionais e regionais.`);
 console.log(`SHA-256: ${checksum}`);
