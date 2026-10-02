@@ -1,0 +1,13 @@
+{
+  "schema_version": "2.0.0",
+  "environment": "demo",
+  "generated_at": "2026-10-02T21:00:00Z",
+  "catalog_url": "./prestadores.json",
+  "record_count": 360,
+  "source_count": 2,
+  "checksum_sha256": "b6fb5711d3d57c6bf4a70efbade70534568b1c994d0ef86b180938939f2a7121",
+  "authorization": {
+    "status": "synthetic-demo",
+    "reference": null
+  }
+}

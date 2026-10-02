@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Nunca versionar extrações ou bases reais neste repositório demonstrativo.
+entrada-real/
+dados-brutos/
+*.xlsx
+*.sqlite

@@ -1,0 +1,15 @@
+{
+  "name": "catalogo-demo-rede-plan-assiste",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API estática demonstrativa para o painel da rede Plan-Assiste.",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/gerar-dados-sinteticos.mjs",
+    "test": "node scripts/validar-catalogo.mjs",
+    "build": "npm run generate && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
