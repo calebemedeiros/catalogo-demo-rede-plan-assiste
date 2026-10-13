@@ -1,55 +1,36 @@
-# Catálogo demonstrativo da rede Plan-Assiste
+# Catálogo da Rede Assistencial do Plan-Assiste
 
-API estática utilizada pelo painel nacional da rede Plan-Assiste para demonstrar o consumo de uma fonte externa e a consolidação de diferentes formas de acesso.
+Pipeline que coleta fontes públicas autorizadas, aplica lista positiva de campos, normaliza vínculos e gera a API estática consumida pelo Painel Nacional da Rede Assistencial.
 
-## Importante
+O catálogo sintético anterior permanece isolado em `api/v1`. A versão de produção usa `api/v2` e contrato `4.0.0`.
 
-Todos os registros são sintéticos. Este repositório não contém nomes, registros profissionais, telefones ou endereços reais e não representa a rede oficial do Plan-Assiste, AMHPDF, CNU, FESP, Unimeds ou Rede D'Or. A presença de um registro não representa cobertura, autorização ou disponibilidade.
+## Fontes da versão candidata
 
-## Composição da amostra
+- AMHPDF, convênio `639`, por API pública;
+- cadastro mestre de redes e telemedicina no portal do Plan-Assiste;
+- TUSS 22, competência 202609;
+- compatibilização oficial TUSS×SIGTAP publicada pela ANS;
+- SIGTAP 202609, incluindo procedimento×CBO.
 
-- 300 médicos da fonte **AMHPDF — amostra demonstrativa**;
-- 60 registros de **credenciamento direto demonstrativo**;
-- 60 registros sintéticos para cada fonte CNU, FESP, Unimeds regionais e Rede D'Or;
-- 600 registros no total;
-- 500 profissionais e 100 estabelecimentos;
-- 48 especialidades e categorias assistenciais;
-- 20 UFs representadas por localidades inteiramente simuladas.
+Redes sem API pública estável são publicadas como diretório e apontam para o guia oficial. O catálogo não afirma que essas listas estão integralmente incorporadas.
 
-## Endpoints estáticos
-
-Após a publicação no GitHub Pages:
-
-```text
-/api/v1/manifest.json
-/api/v1/prestadores.json
-/api/v1/fontes/amhpdf-demo.json
-/api/v1/fontes/plan-assiste-direto-demo.json
-/api/v1/fontes/cnu-demo.json
-/api/v1/fontes/fesp-demo.json
-/api/v1/fontes/unimeds-demo.json
-/api/v1/fontes/rede-dor-demo.json
-```
-
-O painel consulta primeiro o manifesto, verifica a versão, o ambiente, a autorização demonstrativa, a quantidade de registros e o SHA-256. Somente depois carrega o catálogo.
-
-## Gerar e validar
+## Execução
 
 ```powershell
-npm run build
+python -m pip install -r requirements.txt
+python scripts/build_production.py
+python scripts/validate_production.py
+python scripts/package_release.py
 ```
 
-O gerador é determinístico. Executar novamente o comando produz a mesma base e o mesmo checksum enquanto os parâmetros permanecerem inalterados.
+O coletor grava somente os campos públicos permitidos. Arquivos brutos ficam em diretório temporário e são eliminados ao final.
 
-## Adicionar uma fonte
+## Quarentena
 
-Consulte [docs/COMO_ADICIONAR_UMA_FONTE.md](docs/COMO_ADICIONAR_UMA_FONTE.md). A inclusão de uma fonte real dependerá de autorização, minimização dos campos, validação institucional e armazenamento apropriado.
+A geração é interrompida quando uma fonte obrigatória fica vazia, quando o volume cai mais de 5% ou varia mais de 10%, quando há campos proibidos, vínculos inválidos, duplicidades ou checksum divergente. A publicação anterior permanece ativa. Uma exceção revisada exige execução manual com `ALLOW_BREAKING_DATA_UPDATE=1`.
 
-## Segurança
+## Entrega
 
-- nenhuma credencial é utilizada no navegador;
-- os dados reais permanecem bloqueados nesta fase;
-- a publicação exige validação automatizada;
-- campos administrativos conhecidos são rejeitados;
-- todos os registros precisam ser identificados como sintéticos;
-- o catálogo é protegido por checksum SHA-256.
+`python scripts/package_release.py` cria o ZIP, `SHA256SUMS.txt` e SBOM CycloneDX em `release/`. As últimas execuções aprovadas ficam preservadas como artefatos do GitHub Actions.
+
+Consulte [fontes e critérios](docs/FONTES_E_CRITERIOS.md), [operação e rollback](docs/RUNBOOK.md) e [segurança](SECURITY.md).

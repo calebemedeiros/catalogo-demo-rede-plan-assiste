@@ -1,55 +1,63 @@
-name: Validar e publicar catálogo demonstrativo
+name: Coletar, validar e publicar catálogo
 
 on:
   push:
     branches: ["main"]
+  pull_request:
+  schedule:
+    - cron: "17 7 * * *"
   workflow_dispatch:
+    inputs:
+      allow_breaking_data_update:
+        description: "Liberar variação de dados já revisada"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
   pages: write
   id-token: write
+  security-events: write
 
 concurrency:
-  group: pages
+  group: catalog-production
   cancel-in-progress: false
 
 jobs:
-  validate:
+  build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ALLOW_BREAKING_DATA_UPDATE: ${{ inputs.allow_breaking_data_update && '1' || '' }}
     steps:
-      - name: Obter o repositório
-        uses: actions/checkout@v5
-
-      - name: Preparar Node.js
-        uses: actions/setup-node@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
-          node-version: 24
-
-      - name: Regerar e validar o catálogo
-        run: npm run build
-
-      - name: Confirmar que a geração é reproduzível
-        run: git diff --exit-code
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python scripts/build_production.py
+      - run: python scripts/validate_production.py
+      - run: python scripts/package_release.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: catalogo-rede-plan-assiste-${{ github.run_number }}
+          path: |
+            api/v2
+            release
+          retention-days: 90
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
 
   deploy:
-    needs: validate
+    if: github.event_name != 'pull_request'
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Obter o repositório
-        uses: actions/checkout@v5
-
-      - name: Configurar GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Preparar artefato estático
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Publicar no GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
