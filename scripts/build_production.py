@@ -26,7 +26,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "api" / "v2"
 SCHEMA_VERSION = "4.0.0"
-AMHP_BASE = "https://api-esm.amhp.com.br"
+AMHP_BASE = os.getenv("AMHP_BASE_URL", "https://api-esm.amhp.com.br").rstrip("/")
 AMHP_NETWORK_ID = 639
 ANS_CROSSWALK = "https://www.gov.br/ans/pt-br/arquivos/assuntos/prestadores/padrao-para-troca-de-informacao-de-saude-suplementar-tiss/padrao-tiss-tabelas-relacionadas/padraotiss_mapeamento_tuss_sigtap.zip"
 SIGTAP_ARCHIVE = os.getenv("SIGTAP_ARCHIVE_URL", "https://raw.githubusercontent.com/RenatoKR/SIGTAP/main/tabelas/TabelaUnificada_202609_v2610050950.zip")
@@ -244,6 +244,21 @@ def telemedicine_records(config, specialties, verified_date):
     return records, sorted(by_name.values(), key=lambda value: norm(value["name"]))
 
 
+def load_last_approved_amhp():
+    """Retém a última extração aprovada quando a API bloqueia o coletor remoto."""
+    provider_path = OUTPUT / "prestadores" / "amhp-df.json"
+    specialty_path = OUTPUT / "especialidades.json"
+    if not provider_path.exists() or not specialty_path.exists():
+        raise RuntimeError("Não existe catálogo AMHPDF aprovado para contingência.")
+    provider_payload = json.loads(provider_path.read_text("utf-8"))
+    specialty_payload = json.loads(specialty_path.read_text("utf-8"))
+    providers = provider_payload.get("records", [])
+    specialties = specialty_payload.get("records", [])
+    if len(providers) < 10000 or not specialties:
+        raise RuntimeError("O catálogo AMHPDF de contingência não atende aos limites de segurança.")
+    return providers, specialties
+
+
 def json_bytes(value) -> bytes:
     return (json.dumps(value, ensure_ascii=False, separators=(",", ":")) + "\n").encode("utf-8")
 
@@ -264,7 +279,18 @@ def main():
     session = requests.Session()
     with tempfile.TemporaryDirectory(prefix="plan-assiste-build-") as temp:
         work = Path(temp)
-        providers, specialties = collect_amhp(session, verified_date)
+        amhp_status = "updated"
+        amhp_competence = verified_date
+        try:
+            providers, specialties = collect_amhp(session, verified_date)
+        except Exception as exc:
+            # A AMHPDF atualmente rejeita alguns endereços de datacenter (HTTP 403).
+            # Nessa condição o pipeline não substitui nem esvazia a base: conserva a
+            # última extração validada e torna a indisponibilidade visível no catálogo.
+            providers, specialties = load_last_approved_amhp()
+            amhp_status = "temporarily_unavailable"
+            amhp_competence = max((item.get("verified_at") or "" for item in providers), default="") or verified_date
+            print(f"Aviso: AMHPDF indisponível; última versão aprovada preservada ({exc}).", file=sys.stderr)
         remote, specialties = telemedicine_records(config, specialties, verified_date)
         procedures = collect_procedures(session, work, specialties)
 
@@ -272,7 +298,7 @@ def main():
         networks.append({"network_id":"telemedicina","name":"Telemedicina Plan-Assiste","relationship":"direct_agreement","classification":"remote_care","territory":"Nacional","guide_url":config["telemedicine_url"]})
         sources = [
             {"source_id":"plan-assiste-redes","name":"Plan-Assiste — redes credenciadas","organization":"Plan-Assiste MPU","url":config["master_url"],"integration_type":"institutional_reference","frequency":"daily","last_run":generated_at,"record_count":len(networks),"status":"updated","competence":verified_date,"territorial_coverage":"Nacional"},
-            {"source_id":"amhp-api","name":"AMHPDF — Encontre seu Médico","organization":"AMHPDF","url":f"{AMHP_BASE}/swagger/v1/swagger.json","integration_type":"public_api","frequency":"daily","last_run":generated_at,"record_count":len(providers),"status":"updated","competence":verified_date,"territorial_coverage":"Distrito Federal e entorno"},
+            {"source_id":"amhp-api","name":"AMHPDF — Encontre seu Médico","organization":"AMHPDF","url":f"{AMHP_BASE}/swagger/v1/swagger.json","integration_type":"public_api","frequency":"daily","last_run":generated_at,"record_count":len(providers),"status":amhp_status,"status_note":"Última versão aprovada preservada; nova tentativa ocorrerá na próxima execução." if amhp_status != "updated" else None,"competence":amhp_competence,"territorial_coverage":"Distrito Federal e entorno"},
             {"source_id":"plan-assiste-telemedicina","name":"Plan-Assiste — Telemedicina","organization":"Plan-Assiste MPU","url":config["telemedicine_url"],"integration_type":"institutional_reference","frequency":"daily","last_run":generated_at,"record_count":len(remote),"status":"updated","competence":verified_date,"territorial_coverage":"Nacional"},
             {"source_id":"ans-tuss","name":"TUSS 22","organization":"Agência Nacional de Saúde Suplementar","url":TUSS_SOURCE,"integration_type":"public_dataset","frequency":"weekly","last_run":generated_at,"record_count":len(procedures),"status":"updated","competence":"202609","territorial_coverage":"Nacional"},
             {"source_id":"ans-tuss-sigtap","name":"Compatibilização TUSS × SIGTAP","organization":"ANS / Ministério da Saúde","url":ANS_CROSSWALK,"integration_type":"official_crosswalk","frequency":"monthly","last_run":generated_at,"record_count":sum(1 for item in procedures if item["sigtap_codes"]),"status":"updated","competence":"201704 + SIGTAP 202609","territorial_coverage":"Nacional"}
