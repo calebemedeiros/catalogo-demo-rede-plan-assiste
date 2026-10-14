@@ -1,0 +1,62 @@
+# Catálogo inicialmente vazio.
+#
+# Descomente e preencha um bloco somente depois da validação da equipe do
+# Plan-Assiste. A API deve ser pública, HTTPS, documentada e retornar JSON.
+# Não use credenciais, cookies, páginas HTML, proxies ou buscas por enumeração.
+
+[authorization]
+# Altere para "authorized" somente após a validação formal das fontes configuradas.
+status = "configuration_required"
+# Informe a referência interna da autorização; não inclua dados pessoais.
+reference = ""
+
+# Exemplo de fonte com credenciamento direto:
+# [[sources]]
+# source_id = "identificador-da-fonte-direta"
+# network_id = "identificador-da-rede-direta"
+# network_name = "Nome público da rede"
+# relationship = "direct_agreement"
+# territory = "Abrangência publicada"
+# api_url = "https://api.exemplo.institucional/v1/prestadores"
+# documentation_url = "https://api.exemplo.institucional/documentacao"
+# guide_url = "https://guia.exemplo.institucional/"
+# records_path = "data.items"
+#
+# [sources.fields]
+# public_id = "id"
+# display_name = "nome"
+# provider_type = "tipo"
+# council = "conselho"
+# council_state = "uf_conselho"
+# council_number = "numero_conselho"
+# specialty_name = "especialidade"
+# facility_name = "estabelecimento"
+# phone = "telefone_profissional"
+# street = "endereco"
+# district = "bairro"
+# city = "municipio"
+# state = "uf"
+#
+# Exemplo de fonte com credenciamento indireto:
+# [[sources]]
+# source_id = "identificador-da-fonte-indireta"
+# network_id = "identificador-da-rede-indireta"
+# network_name = "Nome público da rede conveniada"
+# relationship = "indirect_agreement"
+# territory = "Abrangência publicada"
+# api_url = "https://api.exemplo.institucional/v1/rede-conveniada"
+# documentation_url = "https://api.exemplo.institucional/documentacao"
+# guide_url = "https://guia.exemplo.institucional/"
+# records_path = "results"
+#
+# [sources.fields]
+# public_id = "codigo"
+# display_name = "nome_publico"
+# provider_type = "tipo"
+# specialty_name = "especialidade"
+# facility_name = "unidade"
+# phone = "telefone"
+# street = "logradouro"
+# district = "bairro"
+# city = "cidade"
+# state = "estado"

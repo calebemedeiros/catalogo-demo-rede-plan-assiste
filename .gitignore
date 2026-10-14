@@ -1,5 +1,7 @@
 dist/
 release/
 reports/
+api/v1/
+api/v2/
 *.zip
 __pycache__/

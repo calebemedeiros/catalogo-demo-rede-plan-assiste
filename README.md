@@ -1,20 +1,20 @@
-# Catálogo da Rede Assistencial do Plan-Assiste
+# Catálogo configurável da Rede Assistencial
 
-Pipeline que coleta fontes públicas autorizadas, aplica lista positiva de campos, normaliza vínculos e gera a API estática consumida pelo Painel Nacional da Rede Assistencial.
+Estrutura vazia para a equipe responsável configurar APIs públicas de credenciados diretos e indiretos. O repositório não contém prestadores, redes, especialidades, procedimentos, URLs institucionais nem respostas reais de APIs.
 
-O catálogo sintético anterior permanece isolado em `api/v1`. A versão de produção usa `api/v2` e contrato `4.0.0`.
+## Configuração
 
-## Fontes da versão candidata
+Edite `sources/catalog-sources.toml`. O arquivo contém apenas blocos comentados com os campos necessários para:
 
-- AMHPDF, convênio `639`, por API pública;
-- cadastro mestre de redes e telemedicina no portal do Plan-Assiste;
-- TUSS 22, competência 202609;
-- compatibilização oficial TUSS×SIGTAP publicada pela ANS;
-- SIGTAP 202609, incluindo procedimento×CBO.
+- fonte de credenciamento direto;
+- fonte de credenciamento indireto;
+- URL pública da API e documentação;
+- caminho da lista na resposta JSON;
+- mapeamento dos campos permitidos.
 
-Redes sem API pública estável são publicadas como diretório e apontam para o guia oficial. O catálogo não afirma que essas listas estão integralmente incorporadas.
+Somente depois da validação institucional, altere `authorization.status` para `authorized` e preencha uma referência interna sem dados pessoais.
 
-## Execução
+## Processamento
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -23,14 +23,6 @@ python scripts/validate_production.py
 python scripts/package_release.py
 ```
 
-O coletor grava somente os campos públicos permitidos. Arquivos brutos ficam em diretório temporário e são eliminados ao final.
+O coletor executa uma leitura `GET`, valida JSON, seleciona somente os campos mapeados e grava a saída em `dist/api/v2`. Ele não usa credenciais, não enumera consultas, não segue rotas alternativas e não preserva a resposta bruta.
 
-## Quarentena
-
-A geração é interrompida quando uma fonte obrigatória fica vazia, quando o volume cai mais de 5% ou varia mais de 10%, quando há campos proibidos, vínculos inválidos, duplicidades ou checksum divergente. A publicação anterior permanece ativa. Uma exceção revisada exige execução manual com `ALLOW_BREAKING_DATA_UPDATE=1`.
-
-## Entrega
-
-`python scripts/package_release.py` cria o ZIP, `SHA256SUMS.txt` e SBOM CycloneDX em `release/`. As últimas execuções aprovadas ficam preservadas como artefatos do GitHub Actions.
-
-Consulte [fontes e critérios](docs/FONTES_E_CRITERIOS.md), [operação e rollback](docs/RUNBOOK.md) e [segurança](SECURITY.md).
+O GitHub Actions publica apenas `dist` como artefato do GitHub Pages. Nenhum JSON gerado é gravado automaticamente na branch.

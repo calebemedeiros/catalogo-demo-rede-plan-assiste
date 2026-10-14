@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://calebemedeiros.github.io/catalogo-demo-rede-plan-assiste/schemas/manifest-v4.1.schema.json",
+  "title": "Manifesto do catálogo Plan-Assiste",
+  "type": "object",
+  "required": ["schema_version", "environment", "generated_at", "publication_status", "data_policy", "resources"],
+  "properties": {
+    "schema_version": {"const": "4.1.0"},
+    "environment": {"const": "production"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "publication_status": {"enum": ["approved", "configuration_required"]},
+    "data_policy": {
+      "type": "object",
+      "required": ["acquisition", "raw_responses_published", "enumeration_allowed", "automatic_commits"],
+      "properties": {
+        "acquisition": {"const": "documented_public_json_only"},
+        "raw_responses_published": {"const": false},
+        "enumeration_allowed": {"const": false},
+        "automatic_commits": {"const": false}
+      },
+      "additionalProperties": false
+    },
+    "resources": {"type": "object"}
+  }
+}

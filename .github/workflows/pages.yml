@@ -7,18 +7,11 @@ on:
   schedule:
     - cron: "17 7 * * *"
   workflow_dispatch:
-    inputs:
-      allow_breaking_data_update:
-        description: "Liberar variação de dados já revisada"
-        required: false
-        type: boolean
-        default: false
 
 permissions:
   contents: read
   pages: write
   id-token: write
-  security-events: write
 
 concurrency:
   group: catalog-production
@@ -29,7 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      ALLOW_BREAKING_DATA_UPDATE: ${{ inputs.allow_breaking_data_update && '1' || '' }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -44,12 +36,12 @@ jobs:
         with:
           name: catalogo-rede-plan-assiste-${{ github.run_number }}
           path: |
-            api/v2
+            dist/api/v2
             release
           retention-days: 90
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist
 
   deploy:
     if: github.event_name != 'pull_request'

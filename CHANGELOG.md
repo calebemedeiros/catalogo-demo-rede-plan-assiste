@@ -1,10 +1,10 @@
 # Registro de alterações
 
-## 1.0.0-rc.1 — 2026-10-13
+## 1.1.0-rc.1
 
-- contrato público 4.0.0;
-- catálogo real da AMHPDF para o convênio 639;
-- redes e telemedicina validadas no portal do Plan-Assiste;
-- TUSS 22 e relação TUSS×SIGTAP×CBO;
-- checksums, lista positiva, validação e quarentena;
-- pacote de release e SBOM.
+- catálogo reinicializado sem dados ou URLs reais;
+- contrato público 4.1.0;
+- configuração comentada para APIs diretas e indiretas;
+- adaptador genérico de JSON público;
+- publicação somente por artefato do GitHub Pages;
+- validação de campos proibidos, autorização e checksums.

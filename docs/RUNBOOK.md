@@ -1,26 +1,17 @@
-# Operação, publicação e rollback
+# Operação e publicação
 
-## Publicação normal
+## Execução normal
 
-O workflow coleta, valida, empacota e publica. Se todos os testes passarem, o GitHub Pages recebe `api/v2`. Cada execução aprovada gera um artefato com retenção de 90 dias.
+O workflow executa uma leitura de cada endpoint configurado, gera `dist/api/v2`, valida o contrato `4.1.0`, empacota e publica o diretório `dist` pelo GitHub Pages.
 
-## Quarentena
+## Fonte indisponível
 
-Falhas interrompem o job antes do deploy. O relatório local fica em `reports/quarantine-latest.json`. Issues ou logs devem conter apenas métricas e identificadores técnicos, nunca o conteúdo completo da fonte.
+Não altere headers para imitar clientes, não use proxy e não crie consultas alternativas. Verifique a documentação pública e registre a fonte como `unavailable` ou `guide_only`.
 
-Se a API pública da AMHPDF rejeitar temporariamente o endereço do executor (por exemplo,
-HTTP 403 em um runner hospedado), o pipeline preserva a última extração aprovada, marca a
-fonte como temporariamente indisponível e tenta novamente na execução seguinte. A DTI pode
-definir `AMHP_BASE_URL` para um endpoint institucional autorizado ou executar a coleta em um
-runner próprio, sem alterar o contrato público do catálogo.
+## Inclusão de fonte
 
-## Aprovação de variação esperada
-
-1. revise a origem, o esquema, as contagens e uma amostra;
-2. registre a justificativa na revisão;
-3. execute manualmente com a opção de liberar a variação;
-4. valide o pacote e publique uma nova versão.
+Uma nova fonte exige URL HTTPS oficial, resposta JSON, documentação do método e evidência de vínculo com o Plan-Assiste. Antes da ativação, inclua host na lista positiva, esquema mínimo, teste de campos proibidos e comportamento de falha.
 
 ## Rollback
 
-Baixe o artefato da última execução aprovada e publique seu conteúdo. Como o deploy só acontece depois da validação, uma coleta recusada não substitui a versão anterior.
+O deploy é atômico. Para restaurar uma versão, utilize o artefato de uma execução aprovada do GitHub Actions. JSONs gerados não são versionados na branch.

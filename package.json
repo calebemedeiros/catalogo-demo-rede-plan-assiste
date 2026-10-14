@@ -1,18 +1,12 @@
 {
   "name": "catalogo-rede-plan-assiste",
-  "version": "1.0.0-rc.1",
+  "version": "1.1.0-rc.1",
   "private": true,
-  "description": "Pipeline e API estática versionada da rede assistencial do Plan-Assiste.",
-  "type": "module",
+  "description": "Pipeline configurável para APIs públicas de rede assistencial.",
   "scripts": {
-    "generate:legacy": "node scripts/gerar-dados-sinteticos.mjs",
     "collect": "python scripts/build_production.py",
-    "test:legacy": "node scripts/validar-catalogo.mjs",
     "test": "python scripts/validate_production.py",
     "build": "npm run collect && npm test",
     "package": "python scripts/package_release.py"
-  },
-  "engines": {
-    "node": ">=20"
   }
 }
